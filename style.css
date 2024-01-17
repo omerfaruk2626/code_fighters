@@ -1,0 +1,56 @@
+@import 'https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap';
+
+
+
+body{
+    background: url('1820901.jpg') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container{
+    display: inline-block;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(171, 127, 51, 0.449);
+    /* z-index: 1; */
+    margin: auto;
+    /* position: absolute; */
+}
+.logo{
+    border: 4px solid white;
+    font-family: 'Rubik Burned', system-ui;
+    color: white;
+    font-size: 75px;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    height: 250px;
+}
+.person{
+    font-family: 'Rubik Burned', system-ui;
+    color: white;
+    font-size: 50px;
+    margin: auto;
+    /* text-align: center; */
+    width: 70%;
+    justify-content: center;
+    /* padding: 15px; */
+    border: 4px solid red;
+    width: 1950px;
+    height: 600px;
+}
+.person a{
+    border: 2px solid white;
+    /* margin: 55px; */
+    /* padding: 50px; */
+    /* text-align: center;
+    text-decoration: none; */
+    color: white;
+    width: 15px;
+    height: 35px;
+}
