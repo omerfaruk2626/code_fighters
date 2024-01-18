@@ -53,4 +53,5 @@ img {
   }
   a:hover img {
     border-radius: 10% 40% 10% 40%;
+    transition: 1.1s;
   }
