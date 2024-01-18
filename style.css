@@ -50,8 +50,10 @@ body{
 }
 img {
     border-radius: 40% 10% 40% 10%;
+    filter: grayscale(100%);
   }
   a:hover img {
     border-radius: 10% 40% 10% 40%;
-    transition: 1.1s;
+    transition: 0.8s;
+    filter: grayscale(0%)
   }
