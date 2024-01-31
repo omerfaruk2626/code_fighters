@@ -1,28 +1,33 @@
 @import 'https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap';
 
 *{
-    margin: 2;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-body{
+html,body{
     background: url('1820901.jpg') no-repeat center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100%;
 }
 
 .container{
     /* border: 5px solid black; */
+    clear: both;
 }
 
 .head{
     text-align: center;
     font-family: 'Rubik Burned', system-ui;
     color: white;
+    margin-top: 15px;
+    /* position: sticky;
+    top: 0; */
 }
 header{
     background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
@@ -43,22 +48,23 @@ nav {
 
 @media screen and (max-width: 768px) {
     nav {
-        /* flex-direction: column; */
+        flex-direction: column;
         height: auto;
-        /* margin-top: 5px; */
+        margin-top: 5px;
     }
 
     nav a {
         width: 100%;
         box-sizing: border-box;
-        /* margin: 20px 0; */
+        margin: 20px 0;
         text-align: center;
-        /* padding: 10px 0; */
+        padding: 10px 0;
     }
 }
 nav a{
     text-decoration: none;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 1.5rem;
     color: white;
     text-align: center;
@@ -74,7 +80,8 @@ nav button{
     border: none;
     background: none;
     cursor: pointer;
-    margin-left: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-radius: 35px;
     padding: 11px 18px;
 }
@@ -110,13 +117,13 @@ nav button:hover{
 .team-child {
     display: none;
     background-color: rgba(0, 0, 0, 0.523);
-    min-width: 150px; /* Adjust the minimum width as needed */
+    min-width: 150px;
     position: absolute;
-    top: 100%;
-    width: 30px; /* Adjust the width as needed */
+    /* top: 100%; */
+    width: 50px; /* Adjust the width as needed */
     text-align: center;
     padding: 10px; /* Adjust the padding as needed */
-    margin: 0; /* Reset margin to 0 */
+    margin: 5px; /* Reset margin to 0 */
     /* right: 1%; */
 }
 
@@ -127,8 +134,8 @@ nav button:hover{
     padding: 5px;
     text-decoration: none;
     display: block;
-    font-size: 14px;
-    text-align: left;
+    font-size: 16px;
+    /* text-align: left; */
     font-family: 'Black Ops One', system-ui;
     /* text-align: center; */
 }
@@ -143,22 +150,128 @@ nav button:hover{
     /* width: 5px; */
     /* text-align: center; */
 }
-img {
-    border-radius: 50% 30% 50% 30%;
-    filter: grayscale(100%);
-    filter:sepia(100%);
-    width: 215px;
-    padding: 30px;
-    transition: 0.8s;
+/* Update the .team class to .team-menu */
+.team-menu {
+    position: relative;
+    display: inline-block;
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Add cursor: pointer to .team-menu:hover */
+.team-menu:hover .team-child {
+    display: block;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+/* Add cursor: pointer to .team-child */
+.team-child {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.523);
+    min-width: 150px;
+    position: absolute;
+    top: 105%;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    cursor: pointer; /* Add this line */
+}
+
+.person img {
+    /* border-radius: 50% 30% 50% 30%; */
+    /* filter: grayscale(100%); */
+    /* filter:sepia(100%); */
+    width: 125px;
+    height: 125px;
+    margin: 15px;
+    padding: 5px;
+    cursor: pointer;
+    /* transition: 0.8s; */
+
   }
-.person{
+
+
+/* Styling for .person class */
+.person {
     font-family: 'Rubik Burned', system-ui;
     color: white;
     font-size: 50px;
-    margin: auto;
-    /* border: 4px solid red; */
-    width: 98vw;
-    height:13em;
-    padding: 40px;
-    hover
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 84vh;
+    padding: 0 5%;
+}
+.person h1{
+    font-family: 'trebuchet ms';
+    font-size: 1rem;
+    text-align: center;
+    display: none;
+}
+/* Styling for .person paragraph */
+.person p {
+    font-family: 'trebuchet ms';
+    font-size: 1rem;
+    text-align: center;
+    display: none;
+}
+
+/* Styling for .mentor class */
+.mentor {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    /* display: inline-block; */
+    /* cursor: pointer; */
+    padding: 15px;
+    margin: 0 80%;
+}
+.mentor div:hover img {
+    display: block;
+    color: #ff6f00;
+    background-color: #a78ee73d;
+    border-radius: 15px;
+    position: absolute;
+    font-size: 1.5rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2px;
+    
+}
+/* Hover effect for .person img */
+.person div {
+    position: relative;
+    /* display: inline-block; */
+    /* cursor: pointer; */
+    padding: 15px;
+}
+
+.person div:hover p {
+    display: block;
+    color: #ff6f00;
+    background-color: #a78ee73d;
+    border-radius: 15px;
+    position: absolute;
+    font-size: 1.5rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2px; /* Adjust the distance from the image bottom as needed */
+}
+.footer{
+    position: fixed;
+      left:0px; 
+      bottom:0px;
+      background-color: bisque;
+      width: 100%;
+      text-align: center;
 }
