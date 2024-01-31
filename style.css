@@ -16,85 +16,141 @@ body{
 }
 
 .container{
-    display: inline-block;
-    /* justify-content: center; */
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(171, 127, 51, 0.449);
-    /* z-index: 1; */
-    /* margin: auto; */
-    /* position: absolute; */
-}
-header{
-    background: linear-gradient(90deg, #d7b879 0%, #acaab1 100%);
-    text-align: center;
-    /* padding: 1rem; */
-    /* border-radius: 10px; */
-    /* border: 2px solid black; */
-    /* outline: 3px double black; */
-    /* box-shadow: 2px 2px 4px 2px rgb(104, 102, 102); */
-    position: fixed;
-    right: 0;
-    left: 0;
-    width: 70%;
-    /* height: 125px; */
-    /* z-index: 1000; */
-    margin: 2rem auto;
-    /* display: flex; */
-    justify-content: space-around;
+    /* border: 5px solid black; */
 }
 
-nav{
-    /* border: 1px solid red; */
+.head{
+    text-align: center;
+    font-family: 'Rubik Burned', system-ui;
+    color: white;
+}
+header{
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+    text-align: center;
+}
+
+nav {
     font-family: 'Bungee Shade', sans-serif;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 65px;
+}
 
+@media screen and (max-width: 768px) {
+    nav {
+        /* flex-direction: column; */
+        height: auto;
+        /* margin-top: 5px; */
+    }
+
+    nav a {
+        width: 100%;
+        box-sizing: border-box;
+        /* margin: 20px 0; */
+        text-align: center;
+        /* padding: 10px 0; */
+    }
 }
 nav a{
-    /* border: 1px solid red; */
     text-decoration: none;
-    /* margin-left: 3rem; */
-    font-size: 24px;
-    color: black;
+    margin-left: 3rem;
+    font-size: 1.5rem;
+    color: white;
     text-align: center;
+    border-radius: 45px;
+    padding: 11px 18px;
 }
+
 nav button{
     text-decoration: none;
-    /* margin-left: 3rem; */
-    font-size: 24px;
-    color: black;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
     text-align: center;
     border: none;
     background: none;
-    font-family: 'Bungee Shade', sans-serif;
     cursor: pointer;
+    margin-left: 3rem;
+    border-radius: 35px;
+    padding: 11px 18px;
 }
 
 nav a:hover{
-    color: #562906;
+    color: #ff6f00;
+    background-color: #a78ee73d;
 }
 
-nav a i{
-    margin-right: 10px;
+nav button:hover{
+    color: #562906;
+    background-color: #a78ee7ce;
 }
-.logo{
-    /* border: 4px solid white; */
-    /* border-style: double; */
-    font-family: 'Rubik Burned', system-ui;
-    color: white;
-    
-    margin: auto;
+
+
+
+  .team {
+    position: relative;
+    display: inline-block;
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 12px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+ .team button {
+    font-family: 'Bungee Shade', sans-serif;
+    font-size: 24px;
+}
+
+.team-child {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.523);
+    min-width: 150px; /* Adjust the minimum width as needed */
+    position: absolute;
+    top: 100%;
+    width: 30px; /* Adjust the width as needed */
     text-align: center;
-    width: 70%;
-    height: 230px;
+    padding: 10px; /* Adjust the padding as needed */
+    margin: 0; /* Reset margin to 0 */
+    /* right: 1%; */
 }
-.logo h1{
-    margin-top: 25px;
-    font-size: 3rem;
+
+
+
+.team-child a {
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Black Ops One', system-ui;
+    /* text-align: center; */
 }
+
+.team:hover .team-child {
+    display: block;
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    /* background-color: #d7b879; */
+    /* margin-left: 1px; */
+    /* padding-left: -15px; */
+    /* width: 5px; */
+    /* text-align: center; */
+}
+img {
+    border-radius: 50% 30% 50% 30%;
+    filter: grayscale(100%);
+    filter:sepia(100%);
+    width: 215px;
+    padding: 30px;
+    transition: 0.8s;
+  }
 .person{
     font-family: 'Rubik Burned', system-ui;
     color: white;
@@ -105,62 +161,4 @@ nav a i{
     height:13em;
     padding: 40px;
     hover
-}
-img {
-    border-radius: 50% 30% 50% 30%;
-    /* filter: grayscale(100%); */
-    filter:sepia(100%);
-    width: 215px;
-    padding: 30px;
-    transition: 0.8s;
-  }
-  a:hover img {
-    border-radius: 30% 50% 30% 50%;
-    transition: 0.8s;
-    filter: grayscale(0%);
-    
-  }
-  /* .team {
-    position: relative;
-    display: inline-block;
-    font-family: 'Bungee Shade', sans-serif;
-    font-size: 12px;
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-} */
-
-/* .team button {
-    font-family: 'Bungee Shade', sans-serif;
-    font-size: 24px;
-} */
-
-.team-child {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.523);
-    min-width: 250px;
-    position: absolute;
-    top: 100%;
-    /* right: 1%; */
-}
-
-.team-child a {
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    text-decoration: none;
-    display: block;
-    font-size: 14px;
-    text-align: left;
-    font-family: 'Black Ops One', system-ui;
-}
-
-.team:hover .team-child {
-    display: block;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    background-color: #d7b879;
-    margin-left: 1px;
-    /* padding-left: -15px; */
-    width: 45px;
 }
