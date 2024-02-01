@@ -30,6 +30,10 @@ html,body{
     font-size: 1.5rem;
 
 }
+.head a{
+    text-decoration: none;
+    color: white;
+}
 header{
     background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
     text-align: center;
@@ -73,16 +77,11 @@ nav button{
     padding: 11px 18px;
 }
 
-nav a:hover{
-    color: #ff6f00;
-    background-color: #a78ee73d;
-}
-
+nav a:hover,
 nav button:hover{
-    color: #562906;
-    background-color: #a78ee7ce;
+    color: #000000;
+    background-color: #d3cde1a7;
 }
-
 
 
 .projects {
@@ -208,6 +207,7 @@ nav button:hover{
     background-color: #5965603d;
     cursor: pointer;
     border: 2px solid white;
+    backdrop-filter: blur(5px);
 
 }
 
