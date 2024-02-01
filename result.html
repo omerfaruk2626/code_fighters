@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=he, initial-scale=1.0">
     <title>Code Fighters</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="result.css">
 </head>
 <!--  -->
 
@@ -18,7 +18,7 @@
             <nav>
                 <div class="links">
                     <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
-                    <a href="#about"><i class="fa-regular fa-address-card"></i>About</a>
+                    <a href="about.html"><i class="fa-regular fa-address-card"></i>About</a>
 
                     <!-- <a href="#projects"><i class="fa-solid fa-computer"></i>Projects</a> -->
                     <a href="contact.html"><i class="fa-regular fa-envelope"></i>Contact</a>
@@ -33,6 +33,7 @@
                         <a href="homef.html">Home Furniture</a>
                         <a href="parallax.html">Parallax</a>
                         <a href="seasons-year.html">Leap Year & Get Seasons</a>
+                        <a href="paths.html">Clarusway Paths</a>
                         <a href="personal.html">Personal</a>
                     </div>
                 </div>
@@ -48,14 +49,25 @@
                     <p>Thank you for your message.</p>
                 </div>
                 <div class="Form">
-                   
+
                 </div>
             </div>
         </main>
-    </div>
-    <div class="footer">
-        <p>Code Fighters. All rights reserved. © 2024</p>
-    </div>
+        <div class="div-results">
+            <div id="results">
+            </div><br>
+        </div>
+        <div class="footer">
+            <p>Code Fighters. All rights reserved. © 2024</p>
+        </div>
+
+        <script>
+            const resultList = document.getElementById('results')
+            new URLSearchParams(window.location.search).forEach((value, name) => {
+                resultList.append(`${name}: ${value}`)
+                resultList.append(document.createElement('br'))
+            })
+        </script>
 </body>
 
 </html>

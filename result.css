@@ -319,7 +319,7 @@ nav button:hover{
     justify-content: center;
 }
 .photo img{
-    width: 200px;
+    width: 400px;
     height: 200px;
 
 }
@@ -398,4 +398,26 @@ textarea::placeholder {
       background-color: rgb(255, 228, 196);
       width: 100%;
       text-align: center;
+}
+.div-results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* background-color: #ccc; */
+    height: 5rem;
+}
+
+#results {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#results p {
+    /* Adjust width and height as needed */
+    width: 200px;
+    height: 200px;
 }
