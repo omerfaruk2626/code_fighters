@@ -1,13 +1,15 @@
 @import 'https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap';
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-html,body{
+html,
+body {
     background: url('1820901.jpg') no-repeat center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -17,11 +19,14 @@ html,body{
     overflow-x: hidden;
 }
 
-.container{
+.container {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
     clear: both;
 }
 
-.head{
+.head {
     text-align: center;
     font-family: 'Rubik Burned', system-ui;
     color: white;
@@ -30,12 +35,14 @@ html,body{
     font-size: 1.5rem;
 
 }
-.head a{
+
+.head a {
     text-decoration: none;
     color: white;
 }
-header{
-    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+
+header {
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%);
     text-align: center;
 }
 
@@ -52,7 +59,7 @@ nav {
 }
 
 
-nav a{
+nav a {
     text-decoration: none;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -63,7 +70,7 @@ nav a{
     padding: 11px 18px;
 }
 
-nav button{
+nav button {
     text-decoration: none;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
@@ -78,7 +85,7 @@ nav button{
 }
 
 nav a:hover,
-nav button:hover{
+nav button:hover {
     color: #000000;
     background-color: #d3cde1a7;
 }
@@ -163,14 +170,14 @@ nav button:hover{
     cursor: pointer;
 }
 
-.title{
+.title {
     text-align: center;
     color: white;
     font-family: 'Gamja Flower', sans-serif;
-    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%);
 }
 
-.linkler{
+.linkler {
     text-align: center;
     color: white;
     font-family: 'Gamja Flower', sans-serif;
@@ -181,7 +188,11 @@ nav button:hover{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
+
+
+
 .link {
     display: flex;
     flex-direction: column;
@@ -196,13 +207,15 @@ nav button:hover{
     color: white;
     background-color: #d7747485;
     text-align: center;
-    border-radius: 35px;
+    border-radius: 40px;
     margin: 10px;
     border: 3px solid rgba(38, 27, 27, 0.559);
 }
+.linkler a{
+    /* position: relative; */
+}
 
-
-.linkler a:hover{
+.linkler a:hover {
     color: #ffffff;
     background-color: #5965603d;
     cursor: pointer;
@@ -211,20 +224,16 @@ nav button:hover{
 
 }
 
-.container{
-    padding: 5px;
-    margin: 5px;
-    border-radius: 15px;
- 
-}
-.footer{
+
+.footer {
     position: fixed;
-      left:0px; 
-      bottom:0px;
-      background-color: bisque;
-      width: 100%;
-      text-align: center;
+    left: 0px;
+    bottom: 0px;
+    background-color: bisque;
+    width: 100%;
+    text-align: center;
 }
+
 @media screen and (max-width: 768px) {
     nav {
         flex-direction: column;
