@@ -47,21 +47,7 @@ nav {
     height: 65px;
 }
 
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-        margin-top: 5px;
-    }
 
-    nav a {
-        width: 100%;
-        box-sizing: border-box;
-        margin: 20px 0;
-        text-align: center;
-        padding: 10px 0;
-    }
-}
 nav a{
     text-decoration: none;
     margin-left: 1rem;
@@ -178,18 +164,6 @@ nav button:hover{
     cursor: pointer;
 }
 
-
-.footer{
-    position: fixed;
-      left:0px; 
-      bottom:0px;
-      background-color: bisque;
-      width: 100%;
-      text-align: center;
-}
-
-
-
 .title{
     text-align: center;
     color: white;
@@ -206,7 +180,8 @@ nav button:hover{
     margin: 10%;
     border-radius: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .link {
     display: flex;
@@ -223,8 +198,8 @@ nav button:hover{
     background-color: #d7747485;
     text-align: center;
     border-radius: 35px;
-    margin: 10px; /* Add margin for spacing */
-    border: 3px solid rgb(38, 27, 27);
+    margin: 10px;
+    border: 3px solid rgba(38, 27, 27, 0.559);
 }
 
 
@@ -233,7 +208,9 @@ nav button:hover{
     background-color: #5965603d;
     cursor: pointer;
     border: 2px solid white;
+
 }
+
 .container{
     padding: 5px;
     margin: 5px;
@@ -247,4 +224,19 @@ nav button:hover{
       background-color: bisque;
       width: 100%;
       text-align: center;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        margin-top: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 20px 0;
+        text-align: center;
+        padding: 10px 0;
+    }
 }
