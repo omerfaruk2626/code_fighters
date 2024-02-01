@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap';
-
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +17,6 @@ html,body{
 }
 
 .container{
-    /* border: 5px solid black; */
     clear: both;
 }
 
@@ -25,9 +24,10 @@ html,body{
     text-align: center;
     font-family: 'Rubik Burned', system-ui;
     color: white;
-    margin-top: 15px;
-    /* position: sticky;
-    top: 0; */
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+
 }
 header{
     background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
@@ -98,7 +98,7 @@ nav button:hover{
 
 
 
-  .team {
+.projects {
     position: relative;
     display: inline-block;
     font-family: 'Bungee Shade', sans-serif;
@@ -109,49 +109,46 @@ nav button:hover{
     cursor: pointer;
 }
 
- .team button {
+.projects button {
     font-family: 'Bungee Shade', sans-serif;
     font-size: 24px;
 }
 
-.team-child {
+.projects-child {
     display: none;
     background-color: rgba(0, 0, 0, 0.523);
     min-width: 150px;
     position: absolute;
-    /* top: 100%; */
-    width: 50px; /* Adjust the width as needed */
+    width: 50px;
     text-align: center;
-    padding: 10px; /* Adjust the padding as needed */
-    margin: 5px; /* Reset margin to 0 */
-    /* right: 1%; */
+    padding: 10px;
+    margin: 5px;
+
 }
 
 
 
-.team-child a {
+.projects-child a {
     color: rgb(255, 255, 255);
     padding: 5px;
+    margin: 1px;
     text-decoration: none;
     display: block;
-    font-size: 16px;
-    /* text-align: left; */
+    font-size: 17px;
+    text-align: left;
     font-family: 'Black Ops One', system-ui;
-    /* text-align: center; */
+    /* width: 138px; */
 }
 
-.team:hover .team-child {
+.projects:hover .projects-child {
     display: block;
     color: rgb(255, 255, 255);
     border-radius: 15px;
-    /* background-color: #d7b879; */
-    /* margin-left: 1px; */
-    /* padding-left: -15px; */
-    /* width: 5px; */
-    /* text-align: center; */
+    /* width: 115px; */
+
 }
-/* Update the .team class to .team-menu */
-.team-menu {
+
+.projects-menu {
     position: relative;
     display: inline-block;
     font-family: 'Bungee Shade', sans-serif;
@@ -159,42 +156,40 @@ nav button:hover{
     cursor: pointer;
 }
 
-/* Add cursor: pointer to .team-menu:hover */
-.team-menu:hover .team-child {
+
+.projects-menu:hover .projects-child {
     display: block;
     color: rgb(255, 255, 255);
     border-radius: 15px;
 }
 
-/* Add cursor: pointer to .team-child */
-.team-child {
+
+.projects-child {
     display: none;
     background-color: rgba(0, 0, 0, 0.523);
     min-width: 150px;
     position: absolute;
-    top: 105%;
-    width: 50px;
+    top: 100%;
+    width: 170px;
     text-align: center;
     padding: 10px;
     margin: 0;
-    cursor: pointer; /* Add this line */
+    cursor: pointer;
 }
 
 .person img {
-    /* border-radius: 50% 30% 50% 30%; */
-    /* filter: grayscale(100%); */
-    /* filter:sepia(100%); */
+
     width: 125px;
     height: 125px;
     margin: 15px;
     padding: 5px;
     cursor: pointer;
-    /* transition: 0.8s; */
+
 
   }
 
 
-/* Styling for .person class */
+
 .person {
     font-family: 'Rubik Burned', system-ui;
     color: white;
@@ -213,7 +208,7 @@ nav button:hover{
     text-align: center;
     display: none;
 }
-/* Styling for .person paragraph */
+
 .person p {
     font-family: 'trebuchet ms';
     font-size: 1rem;
@@ -221,7 +216,7 @@ nav button:hover{
     display: none;
 }
 
-/* Styling for .mentor class */
+
 .mentor {
     width: 10%;
     display: flex;
@@ -229,8 +224,7 @@ nav button:hover{
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-    /* display: inline-block; */
-    /* cursor: pointer; */
+
     padding: 15px;
     margin: 0 80%;
 }
@@ -247,11 +241,10 @@ nav button:hover{
     bottom: 2px;
     
 }
-/* Hover effect for .person img */
+
 .person div {
     position: relative;
-    /* display: inline-block; */
-    /* cursor: pointer; */
+
     padding: 15px;
 }
 
@@ -265,7 +258,66 @@ nav button:hover{
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2px; /* Adjust the distance from the image bottom as needed */
+    bottom: 2px;
+}
+.footer{
+    position: fixed;
+      left:0px; 
+      bottom:0px;
+      background-color: bisque;
+      width: 100%;
+      text-align: center;
+}
+
+
+
+.title{
+    text-align: center;
+    color: white;
+    font-family: 'Gamja Flower', sans-serif;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+}
+
+.linkler{
+    text-align: center;
+    color: white;
+    font-family: 'Gamja Flower', sans-serif;
+    width: 80%;
+    padding: 5px;
+    margin: 10%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    text-decoration: none;
+    width: 155px;
+    height: 125px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #ff000032;
+    text-align: center;
+    border-radius: 35px;
+    margin: 10px; /* Add margin for spacing */
+}
+
+
+.linkler a:hover{
+    color: #ff0000;
+    background-color: #6559593d;
+    cursor: pointer;
+}
+.container{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+ 
 }
 .footer{
     position: fixed;
