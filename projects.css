@@ -14,6 +14,7 @@ html,body{
     -o-background-size: cover;
     background-size: cover;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .container{
@@ -177,89 +178,7 @@ nav button:hover{
     cursor: pointer;
 }
 
-.person img {
 
-    width: 125px;
-    height: 125px;
-    margin: 15px;
-    padding: 5px;
-    cursor: pointer;
-
-
-  }
-
-
-
-.person {
-    font-family: 'Rubik Burned', system-ui;
-    color: white;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 84vh;
-    padding: 0 5%;
-}
-.person h1{
-    font-family: 'trebuchet ms';
-    font-size: 1rem;
-    text-align: center;
-    display: none;
-}
-
-.person p {
-    font-family: 'trebuchet ms';
-    font-size: 1rem;
-    text-align: center;
-    display: none;
-}
-
-
-.mentor {
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-
-    padding: 15px;
-    margin: 0 80%;
-}
-.mentor div:hover img {
-    display: block;
-    color: #ff6f00;
-    background-color: #a78ee73d;
-    border-radius: 15px;
-    position: absolute;
-    font-size: 1.5rem;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2px;
-    
-}
-
-.person div {
-    position: relative;
-
-    padding: 15px;
-}
-
-.person div:hover p {
-    display: block;
-    color: #ff6f00;
-    background-color: #a78ee73d;
-    border-radius: 15px;
-    position: absolute;
-    font-size: 1.5rem;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 2px;
-}
 .footer{
     position: fixed;
       left:0px; 
@@ -301,17 +220,19 @@ nav button:hover{
     height: 125px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-color: #ff000032;
+    background-color: #d7747485;
     text-align: center;
     border-radius: 35px;
     margin: 10px; /* Add margin for spacing */
+    border: 3px solid rgb(38, 27, 27);
 }
 
 
 .linkler a:hover{
-    color: #ff0000;
-    background-color: #6559593d;
+    color: #ffffff;
+    background-color: #5965603d;
     cursor: pointer;
+    border: 2px solid white;
 }
 .container{
     padding: 5px;
