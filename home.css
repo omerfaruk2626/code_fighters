@@ -1,314 +1,301 @@
-@import 'https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap';
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 html,
 body {
-    background: url('1820901.jpg') no-repeat center center fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    overflow-x: hidden;
+  background: url("1820901.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .container {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 15px;
-    clear: both;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+  clear: both;
 }
 
 .head {
-    text-align: center;
-    font-family: 'Rubik Burned', system-ui;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-
+  text-align: center;
+  font-family: "Rubik Burned", system-ui;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 .head a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 header {
-    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%);
-    text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 0.769) 0%,
+    rgba(0, 0, 0, 0.623) 100%,
+    rgb(255, 0, 0) 100%
+  );
+  text-align: center;
 }
 
 nav {
-    font-family: 'Bungee Shade', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 70%;
-    height: 65px;
+  font-family: "Bungee Shade", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  height: 65px;
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-        margin-top: 5px;
-    }
+  nav {
+    flex-direction: column;
+    height: auto;
+    margin-top: 5px;
+  }
 
-    nav a {
-        width: 100%;
-        box-sizing: border-box;
-        margin: 20px 0;
-        text-align: center;
-        padding: 10px 0;
-    }
+  nav a {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px 0;
+  }
 }
 
 nav a {
-    text-decoration: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    border-radius: 45px;
-    padding: 11px 18px;
+  text-decoration: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  border-radius: 45px;
+  padding: 11px 18px;
 }
 
 nav button {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    border-radius: 35px;
-    padding: 11px 18px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 35px;
+  padding: 11px 18px;
 }
 
 nav a:hover,
 nav button:hover {
-    color: #000000;
-    background-color: #d3cde1a7;
+  color: #000000;
+  background-color: #d3cde1a7;
 }
-
-
 
 .projects,
 .exercises {
-    position: relative;
-    display: inline-block;
-    font-family: 'Bungee Shade', sans-serif;
-    font-size: 12px;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 12px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .projects button,
 .exercises button {
-    font-family: 'Bungee Shade', sans-serif;
-    font-size: 24px;
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 24px;
 }
 
 .projects-child,
 .exercises-child {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.523);
-    min-width: 150px;
-    position: absolute;
-    width: 50px;
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
-
+  display: none;
+  background-color: rgba(0, 0, 0, 0.523);
+  min-width: 150px;
+  position: absolute;
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
 }
 
 .projects-child a,
 .exercises-child a {
-    color: rgb(255, 255, 255);
-    padding: 5px;
-    margin: 1px;
-    text-decoration: none;
-    display: block;
-    font-size: 17px;
-    text-align: left;
-    font-family: 'Black Ops One', system-ui;
-    /* width: 138px; */
-    z-index: 2;
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  margin: 1px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+  text-align: left;
+  font-family: "Black Ops One", system-ui;
+  /* width: 138px; */
+  z-index: 2;
 }
 
 .projects:hover .projects-child,
 .exercises:hover .exercises-child {
-    display: block;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    /* width: 115px; */
-    z-index: 2;
-
+  display: block;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
+  /* width: 115px; */
+  z-index: 2;
 }
 
 .projects-menu,
 .exercises-menu {
-    position: relative;
-    display: inline-block;
-    font-family: 'Bungee Shade', sans-serif;
-    font-size: 24px;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
 }
-
 
 .projects-menu:hover .projects-child,
 .exercises-menu:hover .exercises-child {
-    display: block;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
+  display: block;
+  color: rgb(255, 255, 255);
+  border-radius: 15px;
 }
-
 
 .projects-child,
 .exercises-child {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.523);
-    min-width: 150px;
-    position: absolute;
-    top: 100%;
-    width: 170px;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-    cursor: pointer;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.523);
+  min-width: 150px;
+  position: absolute;
+  top: 100%;
+  width: 170px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
 }
 
 /* ------------------------------------------ */
 /*! ---------------- MAİN -------------------- */
 /* ------------------------------------------ */
 
-
-
-
-
-
 .person {
-    font-family: 'Rubik Burned', system-ui;
-    color: white;
-    /* font-size: 50px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 75vh;
-    /* margin: 0 55px; */
-    /* z-index: 1; */
+  font-family: "Rubik Burned", system-ui;
+  color: white;
+  /* font-size: 50px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 75vh;
+  /* margin: 0 55px; */
+  /* z-index: 1; */
 }
 
 .person img {
+  width: 120px;
+  height: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
 
-    width: 120px;
-    height: 120px;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    padding-bottom: 16px;
-    cursor: pointer;
-    transition: 0.5s;
+  padding-bottom: 16px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .person h1 {
-    font-family: 'trebuchet ms';
-    font-size: 1rem;
-    text-align: center;
-    display: none;
-    transition: 0.5s;
+  font-family: "trebuchet ms";
+  font-size: 1rem;
+  text-align: center;
+  display: none;
+  transition: 0.5s;
 }
 
 .person p {
-    font-family: 'trebuchet ms';
-    font-size: 1rem;
-    text-align: center;
-    display: none;
-    transition: 0.5s;
+  font-family: "trebuchet ms";
+  font-size: 1rem;
+  text-align: center;
+  display: none;
+  transition: 0.5s;
 }
 
-
 .mentor {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-    /* background-color: #562906; */
-    /* padding: 10px; */
-    margin: 0 80%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  /* background-color: #562906; */
+  /* padding: 10px; */
+  margin: 0 80%;
 }
 
 .mentor img {
-    width: 150px;
-    height: 150px;
-    transition: 0.5s;
+  width: 150px;
+  height: 150px;
+  transition: 0.5s;
 }
 
 .person div {
-    position: relative;
+  position: relative;
 }
 .mentor div:hover h1 {
-    display: block;
-    color: #efc4c4;
-    background-color: #bd225d9d;
-    border-radius: 15px;
-    position: absolute;
-    font-size: 1.5rem;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    /* bottom: -0px */
+  display: block;
+  color: #efc4c4;
+  background-color: #bd225d9d;
+  border-radius: 15px;
+  position: absolute;
+  font-size: 1.5rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  /* bottom: -0px */
 }
-
-
 
 .person div:hover p {
-    display: block;
-    color: #efc4c4;
-    background-color: #bd225d9d;
-    border-radius: 15px;
-    position: absolute;
-    font-size: 1.3rem;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -40px;
+  display: block;
+  color: #efc4c4;
+  background-color: #bd225d9d;
+  border-radius: 15px;
+  position: absolute;
+  font-size: 1.3rem;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -40px;
 }
-.person div:hover img{
-    transform: scale(2);
-    transition: 0.5s;
-} 
-
+.person div:hover img {
+  transform: scale(1.4);
+  transition: 0.5s;
+}
 
 /* ------------------------------------------ */
 /*! ---------------- FOOTER ----------------- */
 /* ------------------------------------------ */
 
 .footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    background-color: bisque;
-    width: 100%;
-    text-align: center;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color: bisque;
+  width: 100%;
+  text-align: center;
 }
