@@ -1,15 +1,15 @@
 @import 'https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap';
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Lobster&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-html,body{
+html,
+body {
     background: url('1820901.jpg') no-repeat center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -18,14 +18,15 @@ html,body{
     height: 100%;
     overflow-x: hidden;
 }
-.container{
+
+.container {
     padding: 5px;
     margin: 5px;
     border-radius: 15px;
- clear: both;
+    clear: both;
 }
 
-.head{
+.head {
     text-align: center;
     font-family: 'Rubik Burned', system-ui;
     color: white;
@@ -34,12 +35,14 @@ html,body{
     font-size: 1.5rem;
 
 }
-.head a{
+
+.head a {
     text-decoration: none;
     color: white;
 }
-header{
-    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+
+header {
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%);
     text-align: center;
 }
 
@@ -70,7 +73,8 @@ nav {
         padding: 10px 0;
     }
 }
-nav a{
+
+nav a {
     text-decoration: none;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -81,7 +85,7 @@ nav a{
     padding: 11px 18px;
 }
 
-nav button{
+nav button {
     text-decoration: none;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
@@ -96,7 +100,7 @@ nav button{
 }
 
 nav a:hover,
-nav button:hover{
+nav button:hover {
     color: #000000;
     background-color: #d3cde1a7;
 }
@@ -189,75 +193,13 @@ nav button:hover{
     margin: 0;
     cursor: pointer;
 }
-
-
-
-.title{
+.title {
     text-align: center;
     color: white;
     font-family: 'Gamja Flower', sans-serif;
-    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%);
 }
-.we p{
-    font-family: 'Gamja Flower', sans-serif;
-font-family: 'Lobster', sans-serif;
-}
-.linkler{
-    text-align: center;
-    color: white;
-    font-family: 'Gamja Flower', sans-serif;
-    width: 80%;
-    padding: 5px;
-    margin: 10%;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-around;
-}
+/* ------------------------------------------ */
+/*! ---------------- MAİN -------------------- */
+/* ------------------------------------------ */
 
-
-.photo{
-    margin: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.photo img{
-    width: 200px;
-    height: 200px;
-
-}
-/* Add a media query for responsiveness */
-@media screen and (max-width: 768px) {
-    .we {
-        margin: 2rem; /* Adjust margin for smaller screens */
-    }
-}
-
-.about {
-    margin: 8rem 4rem;
-}
-
-.we {
-    font-size: 1.8rem;
-    color: white;
-    font-weight: 800;
-    text-align: center; /* Center text for responsiveness */
-    margin: 5rem 2rem; /* Adjust margin for better spacing */
-    font-family: 'Lobster', sans-serif;
-}
-
-.we h1 {
-    color: red;
-}
-
-
-
-
-.footer{
-    position: fixed;
-      left:0px; 
-      bottom:0px;
-      background-color: rgb(255, 228, 196);
-      width: 100%;
-      text-align: center;
-}

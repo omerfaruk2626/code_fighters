@@ -100,7 +100,8 @@ nav button:hover{
 }
 
 
-.projects {
+.projects,
+.exercises {
     position: relative;
     display: inline-block;
     font-family: 'Bungee Shade', sans-serif;
@@ -111,12 +112,14 @@ nav button:hover{
     cursor: pointer;
 }
 
-.projects button {
+.projects button,
+.exercises button {
     font-family: 'Bungee Shade', sans-serif;
     font-size: 24px;
 }
 
-.projects-child {
+.projects-child,
+.exercises-child {
     display: none;
     background-color: rgba(0, 0, 0, 0.523);
     min-width: 150px;
@@ -128,7 +131,8 @@ nav button:hover{
 
 }
 
-.projects-child a {
+.projects-child a,
+.exercises-child a {
     color: rgb(255, 255, 255);
     padding: 5px;
     margin: 1px;
@@ -141,7 +145,8 @@ nav button:hover{
     z-index: 2;
 }
 
-.projects:hover .projects-child {
+.projects:hover .projects-child,
+.exercises:hover .exercises-child {
     display: block;
     color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -150,7 +155,8 @@ nav button:hover{
 
 }
 
-.projects-menu {
+.projects-menu,
+.exercises-menu {
     position: relative;
     display: inline-block;
     font-family: 'Bungee Shade', sans-serif;
@@ -159,14 +165,16 @@ nav button:hover{
 }
 
 
-.projects-menu:hover .projects-child {
+.projects-menu:hover .projects-child,
+.exercises-menu:hover .exercises-child {
     display: block;
     color: rgb(255, 255, 255);
     border-radius: 15px;
 }
 
 
-.projects-child {
+.projects-child,
+.exercises-child {
     display: none;
     background-color: rgba(0, 0, 0, 0.523);
     min-width: 150px;

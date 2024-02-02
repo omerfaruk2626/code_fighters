@@ -1,13 +1,15 @@
 @import 'https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap';
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 
-html,body{
+html,
+body {
     background: url('1820901.jpg') no-repeat center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
@@ -16,14 +18,15 @@ html,body{
     height: 100%;
     overflow-x: hidden;
 }
-.container{
+
+.container {
     padding: 5px;
     margin: 5px;
     border-radius: 15px;
- clear: both;
+    clear: both;
 }
 
-.head{
+.head {
     text-align: center;
     font-family: 'Rubik Burned', system-ui;
     color: white;
@@ -33,12 +36,13 @@ html,body{
 
 }
 
-.head a{
+.head a {
     text-decoration: none;
     color: white;
 }
-header{
-    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+
+header {
+    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%);
     text-align: center;
 }
 
@@ -69,7 +73,8 @@ nav {
         padding: 10px 0;
     }
 }
-nav a{
+
+nav a {
     text-decoration: none;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -80,7 +85,7 @@ nav a{
     padding: 11px 18px;
 }
 
-nav button{
+nav button {
     text-decoration: none;
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
@@ -95,14 +100,15 @@ nav button{
 }
 
 nav a:hover,
-nav button:hover{
+nav button:hover {
     color: #000000;
     background-color: #d3cde1a7;
 }
 
 
 
-.projects {
+.projects,
+.exercises {
     position: relative;
     display: inline-block;
     font-family: 'Bungee Shade', sans-serif;
@@ -113,12 +119,14 @@ nav button:hover{
     cursor: pointer;
 }
 
-.projects button {
+.projects button,
+.exercises button {
     font-family: 'Bungee Shade', sans-serif;
     font-size: 24px;
 }
 
-.projects-child {
+.projects-child,
+.exercises-child {
     display: none;
     background-color: rgba(0, 0, 0, 0.523);
     min-width: 150px;
@@ -130,7 +138,8 @@ nav button:hover{
 
 }
 
-.projects-child a {
+.projects-child a,
+.exercises-child a {
     color: rgb(255, 255, 255);
     padding: 5px;
     margin: 1px;
@@ -143,7 +152,8 @@ nav button:hover{
     z-index: 2;
 }
 
-.projects:hover .projects-child {
+.projects:hover .projects-child,
+.exercises:hover .exercises-child {
     display: block;
     color: rgb(255, 255, 255);
     border-radius: 15px;
@@ -152,7 +162,8 @@ nav button:hover{
 
 }
 
-.projects-menu {
+.projects-menu,
+.exercises-menu {
     position: relative;
     display: inline-block;
     font-family: 'Bungee Shade', sans-serif;
@@ -161,14 +172,16 @@ nav button:hover{
 }
 
 
-.projects-menu:hover .projects-child {
+.projects-menu:hover .projects-child,
+.exercises-menu:hover .exercises-child {
     display: block;
     color: rgb(255, 255, 255);
     border-radius: 15px;
 }
 
 
-.projects-child {
+.projects-child,
+.exercises-child {
     display: none;
     background-color: rgba(0, 0, 0, 0.523);
     min-width: 150px;
@@ -203,6 +216,7 @@ nav button:hover{
     /* margin: 0 55px; */
     /* z-index: 1; */
 }
+
 .person img {
 
     width: 120px;
@@ -240,7 +254,8 @@ nav button:hover{
     /* padding: 10px; */
     margin: 0 80%;
 }
-.mentor img{
+
+.mentor img {
     width: 150px;
     height: 150px;
 }
@@ -262,7 +277,7 @@ nav button:hover{
 
 .person div {
     position: relative;
-/* z-index: 1; */
+    /* z-index: 1; */
     /* padding: 0 15px; */
 }
 
