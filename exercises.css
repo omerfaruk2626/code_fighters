@@ -203,3 +203,14 @@ nav button:hover {
 /*! ---------------- MAİN -------------------- */
 /* ------------------------------------------ */
 
+.questions{
+    width: 40%;
+    margin-top: 20px;
+    border: 3px solid rgb(255, 255, 255);   
+}
+
+
+
+p{
+    color: aliceblue;
+}

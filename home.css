@@ -226,6 +226,7 @@ nav button:hover {
 
     padding-bottom: 16px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .person h1 {
@@ -233,6 +234,7 @@ nav button:hover {
     font-size: 1rem;
     text-align: center;
     display: none;
+    transition: 0.5s;
 }
 
 .person p {
@@ -240,6 +242,7 @@ nav button:hover {
     font-size: 1rem;
     text-align: center;
     display: none;
+    transition: 0.5s;
 }
 
 
@@ -258,28 +261,26 @@ nav button:hover {
 .mentor img {
     width: 150px;
     height: 150px;
+    transition: 0.5s;
 }
 
-
+.person div {
+    position: relative;
+}
 .mentor div:hover h1 {
     display: block;
-    color: #ff0000;
-    background-color: rgba(106, 73, 190, 0.5);
+    color: #efc4c4;
+    background-color: #bd225d9d;
     border-radius: 15px;
     position: absolute;
     font-size: 1.5rem;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2px;
-
+    /* bottom: -0px */
 }
 
-.person div {
-    position: relative;
-    /* z-index: 1; */
-    /* padding: 0 15px; */
-}
+
 
 .person div:hover p {
     display: block;
@@ -287,16 +288,20 @@ nav button:hover {
     background-color: #bd225d9d;
     border-radius: 15px;
     position: absolute;
-    font-size: 1rem;
+    font-size: 1.3rem;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2px;
+    bottom: -40px;
 }
+.person div:hover img{
+    transform: scale(2);
+    transition: 0.5s;
+} 
 
 
 /* ------------------------------------------ */
-/*! ---------------- FOOTER -------------------- */
+/*! ---------------- FOOTER ----------------- */
 /* ------------------------------------------ */
 
 .footer {

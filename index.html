@@ -146,7 +146,25 @@
     </div>
     <div class="footer">
         <p>Code Fighters. All rights reserved. © 2024</p>
+        <div>
+            <audio id="y" autoplay loop>
+                <source src="./sound/maNga.mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="play()">Play Müzik</button>
+            <button onclick="pause()">Pause Müzik</button>
+        </div>
     </div>
+    <script>
+        var y = document.getElementById("y");
+
+        function play() {
+            y.play();
+        }
+
+        function pause() {
+            y.pause();
+        }
+    </script>
 </body>
 
 </html>
