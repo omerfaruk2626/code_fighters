@@ -309,6 +309,14 @@ nav button:hover {
   transition: 0.5s;
 }
 
+@media (max-width: 410px) {
+  .person img {
+    margin-bottom: 30px; /* Adjust the margin-bottom as needed */
+  }
+  .person div:hover p {
+    bottom: 0px;
+  }
+}
 /* ------------------------------------------ */
 /*! ---------------- FOOTER ----------------- */
 /* ------------------------------------------ */
