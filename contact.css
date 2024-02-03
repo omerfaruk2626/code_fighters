@@ -17,9 +17,6 @@ html,body{
     overflow-x: hidden;
 }
 .container{
-    padding: 5px;
-    margin: 5px;
-    border-radius: 15px;
  clear: both;
 }
 
@@ -121,7 +118,7 @@ nav button:hover{
 .projects-child,
 .exercises-child {
     display: none;
-    background-color: rgba(0, 0, 0, 0.523);
+    background-color: rgba(0, 0, 0, 0.71);
     min-width: 150px;
     position: absolute;
     width: 50px;
