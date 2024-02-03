@@ -246,7 +246,8 @@ nav button:hover {
     /* border: 5px solid rgb(192, 57, 57); */
     padding: 10px;
     margin: 10px;
-    height: auto
+    height: auto;
+flex-wrap: wrap;
 }
 
 .question-1,
