@@ -317,6 +317,23 @@ textarea::placeholder {
       width: 100%;
       text-align: center;
 }
+.footer button {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    background-color: #efc4c4;
+    padding: 5px;
+    width: 100px;
+  }
+  .footer button:hover {
+    background-color: #bd225d9d;
+    color: rgb(255, 255, 255);
+  }
+  
 .div-results {
     display: flex;
     justify-content: center;

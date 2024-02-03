@@ -52,16 +52,40 @@
             <div class="linkler">
                 <a href="https://aliwert.github.io/home-furnishing/" class="link" target="_blank">QA124-ALİ MERT</a>
                 <a href="https://ykslkrtld.github.io/Furniture/" class="link" target="_blank">QB114-YÜKSEL</a>
-                <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/home_furnishing/" class="link" target="_blank">QB135-OMER</a>
-                <a href="https://becooon.github.io/HTML-CSS/Projects/003-Home-Furnishing-Page/" class="link" target="_blank">QA158-ADEM</a>
+                <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/home_furnishing/" class="link"
+                    target="_blank">QB135-OMER</a>
+                <a href="https://becooon.github.io/HTML-CSS/Projects/003-Home-Furnishing-Page/" class="link"
+                    target="_blank">QA158-ADEM</a>
                 <a href="https://maraltach.github.io/forniture-website/" class="link" target="_blank">QB121-AKMARAL</a>
-                <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Home-Furnishing-Page/" class="link" target="_blank">Q8161-SEDA</a>
+                <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Home-Furnishing-Page/" class="link"
+                    target="_blank">Q8161-SEDA</a>
             </div>
-        </main>
     </div>
+    </main>
+
     <div class="footer">
+        <div>
+            <audio id="y" loop>
+                <source src="./sound/maNga.mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="play()">Play▶️</button>
+            <button onclick="pause()">Pause⏸️</button>
+        </div>
         <p>Code Fighters. All rights reserved. © 2024</p>
+
     </div>
+    <script>
+        var y = document.getElementById("y");
+
+        function play() {
+            y.play();
+
+        }
+
+        function pause() {
+            y.pause();
+        }
+    </script>
 </body>
 
 </html>

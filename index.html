@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=he, initial-scale=1.0">
     <title>Code Fighters</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="./images/LOGO.png" type="image/x-icon">
 </head>
 
 <body>
@@ -52,7 +53,8 @@
         <main>
             <div class="person">
                 <div class="mentor">
-                    <a href="https://tr.wikipedia.org/wiki/%C3%87i%C4%9F_k%C3%B6fte#:~:text=%C3%87i%C4%9F%20k%C3%B6fte%20(Osmanl%C4%B1ca%3A%20Dilbaba%2C,Ad%C4%B1yaman%20y%C3%B6resine%20ait%20bir%20yiyecektir." target="_blank"><img src="./images/klipartz.com (12).png" alt=""></a>
+                    <a href="https://tr.wikipedia.org/wiki/%C3%87i%C4%9F_k%C3%B6fte#:~:text=%C3%87i%C4%9F%20k%C3%B6fte%20(Osmanl%C4%B1ca%3A%20Dilbaba%2C,Ad%C4%B1yaman%20y%C3%B6resine%20ait%20bir%20yiyecektir."
+                        target="_blank"><img src="./images/klipartz.com (12).png" alt=""></a>
                     <p>Mr. Ertuğrul😎</p>
                 </div>
                 <div class="the-team">
@@ -142,29 +144,32 @@
                             alt=""></a>
                     <p>QA175-CEREN</p>
                 </div>
+            </div>
         </main>
-    </div>
-    <div class="footer"><div>
-            <audio id="y" autoplay loop>
-                <source src="./sound/maNga.mp3" type="audio/mpeg">
-            </audio>
-            <button onclick="play()">Play▶️</button>
-            <button onclick="pause()">Pause⏸️</button>
+
+        <div class="footer">
+            <div>
+                <audio id="y" loop>
+                    <source src="./sound/maNga.mp3" type="audio/mpeg">
+                </audio>
+                <button onclick="play()">Play▶️</button>
+                <button onclick="pause()">Pause⏸️</button>
+            </div>
+            <p>Code Fighters. All rights reserved. © 2024</p>
+
         </div>
-        <p>Code Fighters. All rights reserved. © 2024</p>
-        
-    </div>
-    <script>
-        var y = document.getElementById("y");
+        <script>
+            var y = document.getElementById("y");
 
-        function play() {
-            y.play();
-        }
+            function play() {
+                y.play();
 
-        function pause() {
-            y.pause();
-        }
-    </script>
+            }
+
+            function pause() {
+                y.pause();
+            }
+        </script>
 </body>
 
 </html>

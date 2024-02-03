@@ -54,11 +54,31 @@
                 <a href="https://aliwert.github.io/path.promotion/" class="link" target="_blank">QA124-ALİ MERT</a>
                 <a href="https://becooon.github.io/HTML-CSS/Assigments/SS-1/"class="link" target="_blank">QA158-ADEM</a>
             </div>
-        </main>
-    </div>
-    <div class="footer">
+       </div> </main>
+    
+       <div class="footer">
+        <div>
+            <audio id="y" loop>
+                <source src="./sound/maNga.mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="play()">Play▶️</button>
+            <button onclick="pause()">Pause⏸️</button>
+        </div>
         <p>Code Fighters. All rights reserved. © 2024</p>
+
     </div>
+    <script>
+        var y = document.getElementById("y");
+
+        function play() {
+            y.play();
+
+        }
+
+        function pause() {
+            y.pause();
+        }
+    </script>
 </body>
 
 </html>

@@ -53,11 +53,31 @@
                 <a href="https://omer-faruk-oncu.github.io/season/" class="link" target="_blank">QB143-FARUK</a>
                 <a href="https://omerfaruk2626.github.io/CW-Area/js/Tasks/seasons/" class="link" target="_blank">QB135-OMER</a>
             </div>
-        </main>
-    </div>
-    <div class="footer">
+      </div>  </main>
+    
+      <div class="footer">
+        <div>
+            <audio id="y" loop>
+                <source src="./sound/maNga.mp3" type="audio/mpeg">
+            </audio>
+            <button onclick="play()">Play▶️</button>
+            <button onclick="pause()">Pause⏸️</button>
+        </div>
         <p>Code Fighters. All rights reserved. © 2024</p>
+
     </div>
+    <script>
+        var y = document.getElementById("y");
+
+        function play() {
+            y.play();
+
+        }
+
+        function pause() {
+            y.pause();
+        }
+    </script>
 </body>
 
 </html>
