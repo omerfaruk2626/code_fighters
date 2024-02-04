@@ -36,7 +36,9 @@
                         <a href="netflix.html">Netflix</a>
                         <a href="media.html">Media Quare</a>
 
-<a href="personal.html">Mix</a>                    </div>
+                        <a href="personal.html">Mix</a>
+                        <a href="test.html">Test</a>
+                    </div>
                 </div>
                 <div class="exercises">
                     <button class="exercises-menu">Exercises</button>
@@ -57,53 +59,61 @@
                 <a href="https://ykslkrtld.github.io/Parallax/" class="link" target="_blank">QB114-YÜKSEL</a>
                 <a href="https://akyarv0.github.io/solution/" class="link" target="_blank">QB129-VEYSEL</a>
                 <a href="https://zeyneparslanj.github.io/parallax/" class="link" target="_blank">QA106-ZEYNEP</a>
-                <a href="https://ssimsir.github.io/workShop/teamwork/002-parallax-website/" class="link" target="_blank">QB127-SADIK</a>
+                <a href="https://ssimsir.github.io/workShop/teamwork/002-parallax-website/" class="link"
+                    target="_blank">QB127-SADIK</a>
                 <a href="https://omer-faruk-oncu.github.io/parallax/" class="link" target="_blank">QB143-FARUK</a>
                 <a href="https://maraltach.github.io/workshop-parallax/" class="link" target="_blank">QB121-AKMARAL</a>
-                <a href="https://becooon.github.io/HTML-CSS/Projects/002-Parallax_Page/" class="link" target="_blank">QA158-ADEM</a>
-                <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/PARALLAX-C%CC%A7ALIS%CC%A7MASI-2/" class="link" target="_blank">Q8161-SEDA</a>
-                <a href="https://omerfaruk2626.github.io/CW-Area/JS/Tasks/parallax/" class="link" target="_blank">QB135-OMER</a>
+                <a href="https://becooon.github.io/HTML-CSS/Projects/002-Parallax_Page/" class="link"
+                    target="_blank">QA158-ADEM</a>
+                <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/PARALLAX-C%CC%A7ALIS%CC%A7MASI-2/"
+                    class="link" target="_blank">Q8161-SEDA</a>
+                <a href="https://omerfaruk2626.github.io/CW-Area/JS/Tasks/parallax/" class="link"
+                    target="_blank">QB135-OMER</a>
             </div>
 
-        </div> </main>
-   
-        <div class="footer">
-            <div>
-                <audio id="radio" loop autoplay>
-                    <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3" type="audio/mpeg">
-                </audio>
-                <button onclick="toggleRadio()">Play▶️</button>
-                <button onclick="pauseRadio()">Mute⏸️</button>
-                <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)" style="width: 80px; position: relative; top: 5px; ">
-            </div>
-            <p>Code Fighters. All rights reserved. © 2024</p>
+    </div>
+    </main>
+
+    <div class="footer">
+        <div>
+            <audio id="radio" loop autoplay>
+                <source
+                    src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3"
+                    type="audio/mpeg">
+            </audio>
+            <button onclick="toggleRadio()">Play▶️</button>
+            <button onclick="pauseRadio()">Mute⏸️</button>
+            <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)"
+                style="width: 80px; position: relative; top: 5px; ">
         </div>
-        
-        <script>
-            var radio = document.getElementById("radio");
-        
-            function toggleRadio() {
-                if (radio.paused) {
-                    radio.play();
-                } else {
-                    radio.pause();
-                }
-                radio.volume = 0.03;
-            }
-        
-            function pauseRadio() {
+        <p>Code Fighters. All rights reserved. © 2024</p>
+    </div>
+
+    <script>
+        var radio = document.getElementById("radio");
+
+        function toggleRadio() {
+            if (radio.paused) {
+                radio.play();
+            } else {
                 radio.pause();
             }
-        
-            function setVolume(volume) {
-                radio.volume = parseFloat(volume);
-            }
-        
-            radio.addEventListener('playing', function() {
-                radio.volume = 0.03;
-            });
-        </script>
-        
+            radio.volume = 0.03;
+        }
+
+        function pauseRadio() {
+            radio.pause();
+        }
+
+        function setVolume(volume) {
+            radio.volume = parseFloat(volume);
+        }
+
+        radio.addEventListener('playing', function () {
+            radio.volume = 0.03;
+        });
+    </script>
+
 </body>
 
 </html>
