@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 let result = "";
-let a = prompt('İçedönük müsünüz yoksa dışadönük müsünüz? 1=içedönük/2=dışadönük');
+let a = +prompt('İçedönük müsünüz yoksa dışadönük müsünüz? 1=içedönük/2=dışadönük');
 
 
 while (a !== 1 && a !== 2) {
     alert('Cevabınız 1 ya da 2 olmalı');
-    a = prompt('İçedönük müsünüz yoksa dışadönük müsünüz? 1=içedönük/2=dışadönük   ');
+    a = +prompt('İçedönük müsünüz yoksa dışadönük müsünüz? 1=içedönük/2=dışadönük   ');
 }
 
 if (a == 1) {
@@ -42,12 +42,12 @@ else {
     result += 'I'
 }
 
-let b = prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? 1=sağduyulu/2=sezgisel');
+let b = +prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? 1=sağduyulu/2=sezgisel');
 
 
 while (b !== 1 && b !== 2) {
     alert('Cevabınız 1 ya da 2 olmalı');
-    b = prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? 1=sağduyulu/2=sezgisel');
+    b = +prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? 1=sağduyulu/2=sezgisel');
 }
 
 if (b == 1) {
@@ -58,12 +58,12 @@ else {
 }
 
 
-let c = prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? 1=düşünceler/2=hisler');
+let c = +prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? 1=düşünceler/2=hisler');
 
 
 while (c !== 1 && c !== 2) {
     alert('Cevabınız 1 ya da 2 olmalı');
-    c = prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? 1=düşünceler/2=hisler');
+    c = +prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? 1=düşünceler/2=hisler');
 }
 
 if (c == 1 ) {
@@ -73,12 +73,12 @@ else {
     result += 'F'
 }
 
-let d = prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? 1=yargılayıcı/2=kavrayacı');
+let d = +prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? 1=yargılayıcı/2=kavrayacı');
 
 
 while (d !== 1 && d !== 2) {
     alert('Cevabınız 1 ya da 2 olmalı');
-    d = prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? 1=yargılayıcı/2=kavrayacı') ;
+    d = +prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? 1=yargılayıcı/2=kavrayacı') ;
 }
 
 if (d == 1) {
