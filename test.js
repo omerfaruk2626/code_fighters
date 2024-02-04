@@ -27,30 +27,30 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 let result = "";
-let a = prompt('İçedönük müsünüz yoksa dışadönük müsünüz? içedönük/dışadönük');
+let a = prompt('İçedönük müsünüz yoksa dışadönük müsünüz? 1=içedönük/2=dışadönük');
 
 
-while (a.toLowerCase() !== 'dışadönük' && a.toLowerCase() !== 'içedönük') {
-    alert('Cevabınız içedönük ya da dışadönük olmalı');
-    a = prompt('İçedönük müsünüz yoksa dışadönük müsünüz?');
+while (a !== 1 && a !== 2) {
+    alert('Cevabınız 1 ya da 2 olmalı');
+    a = prompt('İçedönük müsünüz yoksa dışadönük müsünüz? 1=içedönük/2=dışadönük   ');
 }
 
-if (a == 'dışadönük') {
+if (a == 1) {
     result += 'E'
 }
 else {
     result += 'I'
 }
 
-let b = prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? sağduyulu/sezgisel');
+let b = prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? 1=sağduyulu/2=sezgisel');
 
 
-while (b.toLowerCase() !== 'sağduyulu' && b.toLowerCase() !== 'sezgisel') {
-    alert('Cevabınız sağduyulu ya da sezgisel olmalı');
-    b = prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? sağduyulu/sezgisel');
+while (b !== 1 && b !== 2) {
+    alert('Cevabınız 1 ya da 2 olmalı');
+    b = prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? 1=sağduyulu/2=sezgisel');
 }
 
-if (b == 'sağduyulu') {
+if (b == 1) {
     result += 'S'
 }
 else {
@@ -58,30 +58,30 @@ else {
 }
 
 
-let c = prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? düşünceler/hisler');
+let c = prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? 1=düşünceler/2=hisler');
 
 
-while (c.toLowerCase() !== 'düşünceler' && c.toLowerCase() !== 'hisler') {
-    alert('Cevabınız düşünceler ya da hisler olmalı');
-    c = prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? düşünceler/hisler');
+while (c !== 1 && c !== 2) {
+    alert('Cevabınız 1 ya da 2 olmalı');
+    c = prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? 1=düşünceler/2=hisler');
 }
 
-if (c == 'düşünceler') {
+if (c == 1 ) {
     result += 'T'
 }
 else {
     result += 'F'
 }
 
-let d = prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? yargılayıcı/kavrayacı');
+let d = prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? 1=yargılayıcı/2=kavrayacı');
 
 
-while (d.toLowerCase() !== 'yargılayıcı' && d.toLowerCase() !== 'kavrayıcı') {
-    alert('Cevabınız yargılayıcı ya da kavrayıcı olmalı');
-    d = prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? yargılayıcı/kavrayacı');
+while (d !== 1 && d !== 2) {
+    alert('Cevabınız 1 ya da 2 olmalı');
+    d = prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? 1=yargılayıcı/2=kavrayacı') ;
 }
 
-if (d == 'yargılayıcı') {
+if (d == 1) {
     result += 'J'
 }
 else {
