@@ -64,38 +64,6 @@
         </div>
         <p>Code Fighters. All rights reserved. © 2024</p>
     </div>
-    
-    <!-- ... (your existing HTML code) ... -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var radio = document.getElementById("radio");
-
-        function toggleRadio() {
-            if (radio.paused) {
-                radio.play();
-            } else {
-                radio.pause();
-            }
-            radio.volume = 0.03;
-        }
-
-        function pauseRadio() {
-            radio.pause();
-        }
-
-        function setVolume(volume) {
-            radio.volume = parseFloat(volume);
-        }
-
-        radio.addEventListener('playing', function () {
-            radio.volume = 0.03;
-        });
-        
-        // You can add any additional code from test.js here.
-
-    });
-</script>
-<script src="test.js"></script>
+    <script src="test.js"></script>
 </body>
 </html>

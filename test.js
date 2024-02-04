@@ -1,4 +1,30 @@
+document.addEventListener('DOMContentLoaded', function () {
+    var radio = document.getElementById("radio");
 
+    function toggleRadio() {
+        if (radio.paused) {
+            radio.play();
+        } else {
+            radio.pause();
+        }
+        radio.volume = 0.03;
+    }
+
+    function pauseRadio() {
+        radio.pause();
+    }
+
+    function setVolume(volume) {
+        radio.volume = parseFloat(volume);
+    }
+
+    radio.addEventListener('playing', function () {
+        radio.volume = 0.03;
+    });
+    
+    // You can add any additional code from test.js here.
+
+});
 
 let result = "";
 let a = prompt('İçedönük müsünüz yoksa dışadönük müsünüz? içedönük/dışadönük');
