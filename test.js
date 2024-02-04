@@ -42,11 +42,11 @@ else {
     result += 'I'
 }
 
-let b = +prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? a=sağduyulu/b=sezgisel');
+let b = +prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? 1=sağduyulu/2=sezgisel');
 
 
-while (b !== a && b !== b) {
-    alert('Cevabınız a ya da b olmalı');
+while (b !== 1 && b !== 2) {
+    alert('Cevabınız 1 ya da 2 olmalı');
     b = +prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? 1=sağduyulu/2=sezgisel');
 }
 
