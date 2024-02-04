@@ -316,13 +316,13 @@ nav button:hover {
     position: fixed;
     left: 0px;
     bottom: 0px;
-    background-color: rgb(255, 228, 196);
+    background-color: bisque;
     width: 100%;
     text-align: center;
-}
-
-.footer button {
-    font-size: 1rem;
+    padding-top: 5px;
+  }
+  .footer button {
+    font-size: 0.7rem;
     color: rgb(0, 0, 0);
     text-align: center;
     border: none;
@@ -331,10 +331,10 @@ nav button:hover {
     cursor: pointer;
     background-color: #efc4c4;
     padding: 5px;
-    width: 100px;
-}
-
-.footer button:hover {
+    width: 60px;
+  }
+  .footer button:hover {
     background-color: #bd225d9d;
     color: rgb(255, 255, 255);
-}
+  }
+  
