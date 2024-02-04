@@ -15,7 +15,7 @@ if (a == 'dışadönük') {
 else {
     result += 'I'
 }
-alert(result)
+
 let b = prompt('Sağduyulu musunuz yoksa sezgilerini mi kullanıyorsunuz? sağduyulu/sezgisel');
 
 
@@ -31,7 +31,7 @@ else {
     result += 'N'
 }
 
-alert(result)
+
 let c = prompt('Sizin için düşünceler mi daha çok önemlidir hisler mi? düşünceler/hisler');
 
 
@@ -46,7 +46,7 @@ if (c == 'düşünceler') {
 else {
     result += 'F'
 }
-alert(result)
+
 let d = prompt('Yargılayıcı mısınız yoksa kavrayacı mısınız? yargılayıcı/kavrayacı');
 
 
