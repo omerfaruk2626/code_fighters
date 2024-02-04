@@ -239,11 +239,15 @@ nav button:hover {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
 }
 
 .content h2 {
     font-size: 1.5rem;
+    color: red;
+}
+.content h4{
     color: red;
 }
 
@@ -257,16 +261,13 @@ nav button:hover {
     align-items: left;
     /* border: 5px solid rgb(192, 57, 57); */
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
     height: auto;
     width: 100%;
 }
 
 /* Styling for questions and answers containers */
-.question-1,
-.answers-1,
-.answers-2,
-.question-2 {
+.questions, .answers {
     border: 4px solid #9c8181;
     margin: 15px;
     width: 47%;
@@ -275,37 +276,40 @@ nav button:hover {
     overflow: hidden;
     height: 180px;
     padding: 8px;
-}
-
-/* Adding cursor:pointer to question containers for better user interaction */
-.question-1, 
-.question-2 {
     cursor: pointer;
+}
 
-}
-.answers-1, .answers-2 {
+/* .answers{
     float: right;
-}
-.question-1:hover, 
-.question-2:hover {
+} */
+/* .questions:hover {
     border: 4px solid #b30000;
     background-color: #1d3e4b86;
     
-}
+} */
 
 /* Hiding answers-1 by default */
-.answers-1,
-.answers-2 {
+.answers {
     display: none;
 }
 
 /* Displaying answers-1 when hovering over question-1 */
-.row1:hover .answers-1 {
+.row:hover .answers {
     display: inline-block;
+    border: 4px solid #b30000;
+    background-color: #1d3e4b86;
+    transition: 16.5s;
+
 }
-.row2:hover .answers-2 {
+.row:hover .questions {
+    /* display: inline-block; */
+    border: 4px solid #b30000;
+    background-color: #1d3e4b86;
+    /* transition: 16.5s; */
+}
+/* .row2:hover .answers-2 {
     display: inline-block;
-}
+} */
 
 /* ------------------------------------------ */
 /*! --------------- FOOTER------------------- */

@@ -36,7 +36,8 @@
                         <a href="netflix.html">Netflix</a>
                         <a href="media.html">Media Quare</a>
 
-<a href="personal.html">Mix</a>                    </div>
+                        <a href="personal.html">Mix</a>
+                    </div>
                 </div>
                 <div class="exercises">
                     <button class="exercises-menu">Exercises</button>
@@ -56,26 +57,53 @@
         <main>
             <div class="content">
                 <div class="row row1">
-                    <div class="question-1">
+                    <div class="questions question-1">
                         <h2>Question 1</h2>
                         <p>Declare a variable named challenge and assign it to an initial value '30 Days Of JavaScript'
                         </p>
                     </div>
-                    <div class="answers-1">
-                        <h2>Answer</h2>
-                        <p>let challenge = "30 Days Of JavaScript"</p>
+                    <div class="answers answers-1">
+                        <h2>Answer 1</h2>
+                        <p>let str = "Hello mello!"</p>
                     </div>
                 </div>
-            </div>
-            <div class="content">
                 <div class="row row2">
-                    <div class="question-2">
+                    <div class="questions question-2">
                         <h2>Question 2</h2>
                         <p>Print the string on the browser console using console.log()</p>
                     </div>
-                    <div class="answers-2">
-                        <h2>Answer</h2>
-                        <p>console.log("30 Days Of JavaScript")</p>
+                    <div class="answers answers-2">
+                        <h2>Answer 2</h2>
+                        <p>console.log(str)</p>
+                        <br><br>
+                        <h4>Output</h4>
+                        <p>Hello mello!</p>
+                    </div>
+                </div>
+                <div class="row row3">
+                    <div class="questions question-3">
+                        <h2>Question 3</h2>
+                        <p>Print the length of the string on the browser console using console.log()</p>
+                    </div>
+                    <div class="answers answers-3">
+                        <h2>Answer 3</h2>
+                        <p>let str = "Hello mello!"</p>
+                        <p>console.log(str.length)</p>
+                        <h4>Output</h4>
+                        <p>12</p>
+                    </div>
+                </div>
+                <div class="row row4">
+                    <div class="questions question-4">
+                        <h2>Question 4</h2>
+                        <p>Change all the string characters to capital letters using toUpperCase() method</p>
+
+                    </div>
+                    <div class="answers answers-4">
+                        <h2>Answer 4</h2>
+                        <p>console.log(str.toUpperCase())</p>
+                        <h4>Output</h4>
+                        <p>HELLO MELLO</p>
                     </div>
                 </div>
             </div>
@@ -83,18 +111,21 @@
         <div class="footer">
             <div>
                 <audio id="radio" loop autoplay>
-                    <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3" type="audio/mpeg">
+                    <source
+                        src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3"
+                        type="audio/mpeg">
                 </audio>
                 <button onclick="toggleRadio()">Play▶️</button>
                 <button onclick="pauseRadio()">Mute⏸️</button>
-                <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)" style="width: 80px; position: relative; top: 5px; ">
+                <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)"
+                    style="width: 80px; position: relative; top: 5px; ">
             </div>
             <p>Code Fighters. All rights reserved. © 2024</p>
         </div>
-        
+
         <script>
             var radio = document.getElementById("radio");
-        
+
             function toggleRadio() {
                 if (radio.paused) {
                     radio.play();
@@ -103,20 +134,20 @@
                 }
                 radio.volume = 0.03;
             }
-        
+
             function pauseRadio() {
                 radio.pause();
             }
-        
+
             function setVolume(volume) {
                 radio.volume = parseFloat(volume);
             }
-        
-            radio.addEventListener('playing', function() {
+
+            radio.addEventListener('playing', function () {
                 radio.volume = 0.03;
             });
         </script>
-        
+
 </body>
 
 </html>
