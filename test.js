@@ -3,36 +3,65 @@ let participate = confirm('Basit bir kişilik testi yaptım. Her test 10$. Katı
 if (participate) {
     let result = "";
 
-    let a = prompt('Kendinizi 2 kelime ile tanıtmanızı istesem. Nasıl tanımlarsınız?   \n 1= İçedönük / 2= Dışadönük')
-    if (a == '1') {
-        result += 'E';
-    }
-    else {
-        alert('Lütfen cevabınızı 1 yada 2 olarak girin');
+    while (true) {
+        let a = prompt('Kendinizi 2 kelime ile tanıtmanızı istesem. Nasıl tanımlarsınız?\n1= İçedönük / 2= Dışadönük');
 
-    }
-    let b = prompt('Sağduyulu mu hareket edersiniz yoksa sezgilerinizle mi hareket edersiniz? \n 1= Sağduyulu / 2= Sezgiler')
-    if (b == '1') {
-        result += 'S';
-    }
-    else {
-        alert('Lütfen cevabınızı 1 yada 2 olarak girin');
+        if (a === '1') {
+            result += 'E';
+            break;
+        } else if (a === '2') {
+            result += 'I';
+            break;
+        } else {
+            alert('Lütfen cevabınızı 1 veya 2 olarak girin');
+        }
     }
 
-    let c = prompt('Bir karar vereceğiniz zaman düşünceleriniz mi ön planda olur yoksa hisleriniz mi? \n 1= Düşüncüler / 2= Hisler')
-    if (c == '1') {
-        result += 'T';
+    
+    while (true) {
+        let a = prompt('Sağduyulu mu hareket edersiniz yoksa sezgilerinizle mi hareket edersiniz? \n 1= Sağduyulu / 2= Sezgiler');
+
+        if (a === '1') {
+            result += 'S';
+            break;
+        } else if (a === '2') {
+            result += 'N';
+            break;
+        } else {
+            alert('Lütfen cevabınızı 1 veya 2 olarak girin');
+        }
     }
-    else {
-        alert('Lütfen cevabınızı 1 yada 2 olarak girin');
+
+    
+    while (true) {
+        let a = prompt('Bir karar vereceğiniz zaman düşünceleriniz mi ön planda olur yoksa hisleriniz mi? \n 1= Düşüncüler / 2= Hisler');
+
+        if (a === '1') {
+            result += 'T';
+            break;
+        } else if (a === '2') {
+            result += 'F';
+            break;
+        } else {
+            alert('Lütfen cevabınızı 1 veya 2 olarak girin');
+        }
     }
-    let d = prompt('Olaylar karşısında yargılayıcı tarafta mı olursunuz yoksa kavrayıcı / kabullenen mi? \n 1= Yargılayıcı / 2= Kavrayıcı')
-    if (d == '1') {
-        result += 'J';
+
+    
+    while (true) {
+        let a = prompt('Olaylar karşısında yargılayıcı tarafta mı olursunuz yoksa kavrayıcı / kabullenen mi? \n 1= Yargılayıcı / 2= Kavrayıcı');
+
+        if (a === '1') {
+            result += 'J';
+            break;
+        } else if (a === '2') {
+            result += 'P';
+            break;
+        } else {
+            alert('Lütfen cevabınızı 1 veya 2 olarak girin');
+        }
     }
-    else {
-        alert('Lütfen cevabınızı 1 yada 2 olarak girin');
-    }
+
     
 
 
