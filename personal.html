@@ -11,7 +11,9 @@
 <body>
     <div class="container">
         <div class="head">
-            <a href="index.html"><h1>Code <span style="color: red;">Fighters</span></h1></a>
+            <a href="index.html">
+                <h1>Code <span style="color: red;">Fighters</span></h1>
+            </a>
         </div>
         <header>
             <nav>
@@ -33,9 +35,10 @@
                         <a href="paths.html">Clarusway Paths</a>
                         <a href="netflix.html">Netflix</a>
                         <a href="media.html">Media Quare</a>
-
-<a href="personal.html">Mix</a>
-<a href="test.html">Test</a>                      </div>
+                        <a href="personal.html">Mix</a>
+                        <a href="apple.html">Apple</a>
+                        <a href="test.html">Test</a>
+                    </div>
                 </div>
                 <div class="exercises">
                     <button class="exercises-menu">Exercises</button>
@@ -53,33 +56,46 @@
         <main>
             <h1 class="title">M i X</h1>
             <div class="linkler">
-                <a href="https://sedadiriker.github.io/finished-work/gaziantep/" class="link" target="_blank">Q8161-SEDA GAZİANTEP</a>
-                <a href="https://sedadiriker.github.io/work-in-progress/GOOGLE/" class="link" target="_blank">Q8161-SEDA GOOGLE</a>
-                <a href="https://becooon.github.io/Homeworks/Practice/" class="link" target="_blank">QA158-ADEM PRACTİCE</a>
-                <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/position-practice/" class="link" target="_blank">Q8161-SEDA POSITION</a>
-                <a href="https://sedadiriker.github.io/finished-work/kis%CC%A7isel%20portfo%CC%88y/" class="link" target="_blank">Q8161-SEDA PORTFOLIO</a>
-                <a href="https://sedadiriker.github.io/finished-work/pastac%C4%B1/ "class="link" target="_blank">Q8161-SEDA PASTE</a>
-                <a href="https://zeyneparslanj.github.io/ass2_PersonalPortfolio/" class="link" target="_blank">QA106-ZEYNEP PORTFOLIO</a>
-                <a href="https://zeyneparslanj.github.io/WorldChildCrueltyGallery/" class="link" target="_blank">QA106-ZEYNEP WORLD</a>
-                <a href="https://aliwert.github.io/city-introduction/" class="link" target="_blank">QA124-ALI MERT CITY</a>
+                <a href="https://sedadiriker.github.io/finished-work/gaziantep/" class="link" target="_blank">Q8161-SEDA
+                    GAZİANTEP</a>
+                <a href="https://sedadiriker.github.io/work-in-progress/GOOGLE/" class="link" target="_blank">Q8161-SEDA
+                    GOOGLE</a>
+                <a href="https://becooon.github.io/Homeworks/Practice/" class="link" target="_blank">QA158-ADEM
+                    PRACTİCE</a>
+                <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/position-practice/" class="link"
+                    target="_blank">Q8161-SEDA POSITION</a>
+                <a href="https://sedadiriker.github.io/finished-work/kis%CC%A7isel%20portfo%CC%88y/" class="link"
+                    target="_blank">Q8161-SEDA PORTFOLIO</a>
+                <a href="https://sedadiriker.github.io/finished-work/pastac%C4%B1/ " class="link"
+                    target="_blank">Q8161-SEDA PASTE</a>
+                <a href="https://zeyneparslanj.github.io/ass2_PersonalPortfolio/" class="link"
+                    target="_blank">QA106-ZEYNEP PORTFOLIO</a>
+                <a href="https://zeyneparslanj.github.io/WorldChildCrueltyGallery/" class="link"
+                    target="_blank">QA106-ZEYNEP WORLD</a>
+                <a href="https://aliwert.github.io/city-introduction/" class="link" target="_blank">QA124-ALI MERT
+                    CITY</a>
             </div>
-      </div>  </main>
-    
-      <div class="footer">
+    </div>
+    </main>
+
+    <div class="footer">
         <div>
             <audio id="radio" loop autoplay>
-                <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3" type="audio/mpeg">
+                <source
+                    src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3"
+                    type="audio/mpeg">
             </audio>
             <button onclick="toggleRadio()">Play▶️</button>
             <button onclick="pauseRadio()">Mute⏸️</button>
-            <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)" style="width: 80px; position: relative; top: 5px; ">
+            <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)"
+                style="width: 80px; position: relative; top: 5px; ">
         </div>
         <p>Code Fighters. All rights reserved. © 2024</p>
     </div>
-    
+
     <script>
         var radio = document.getElementById("radio");
-    
+
         function toggleRadio() {
             if (radio.paused) {
                 radio.play();
@@ -88,20 +104,20 @@
             }
             radio.volume = 0.03;
         }
-    
+
         function pauseRadio() {
             radio.pause();
         }
-    
+
         function setVolume(volume) {
             radio.volume = parseFloat(volume);
         }
-    
-        radio.addEventListener('playing', function() {
+
+        radio.addEventListener('playing', function () {
             radio.volume = 0.03;
         });
     </script>
-    
+
 </body>
 
 </html>

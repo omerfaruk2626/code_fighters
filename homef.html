@@ -33,8 +33,9 @@
                         <a href="paths.html">Clarusway Paths</a>
                         <a href="netflix.html">Netflix</a>
                         <a href="media.html">Media Quare</a>
-<a href="personal.html">Mix</a>
-<a href="test.html">Test</a>  
+                        <a href="personal.html">Mix</a>
+                        <a href="apple.html">Apple</a>
+                        <a href="test.html">Test</a>
                     </div>
                 </div>
                 <div class="exercises">
@@ -46,7 +47,7 @@
                         <a href="arrays.html">Arrays</a>
                         <a href="loops.html">Loops</a>
                         <a href="functions.html">Functions</a>
-                        
+
                     </div>
                 </div>
             </nav>
@@ -56,11 +57,15 @@
             <div class="linkler">
                 <a href="https://aliwert.github.io/home-furnishing/" class="link" target="_blank">QA124-ALİ MERT</a>
                 <a href="https://ykslkrtld.github.io/Furniture/" class="link" target="_blank">QB114-YÜKSEL</a>
-                <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/home_furnishing/" class="link"target="_blank">QB135-OMER</a>
-                <a href="https://becooon.github.io/HTML-CSS/Projects/003-Home-Furnishing-Page/" class="link"target="_blank">QA158-ADEM</a>
+                <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/home_furnishing/" class="link"
+                    target="_blank">QB135-OMER</a>
+                <a href="https://becooon.github.io/HTML-CSS/Projects/003-Home-Furnishing-Page/" class="link"
+                    target="_blank">QA158-ADEM</a>
                 <a href="https://maraltach.github.io/forniture-website/" class="link" target="_blank">QB121-AKMARAL</a>
-                <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Home-Furnishing-Page/" class="link"target="_blank">Q8161-SEDA</a>
-                <a href="https://zeyneparslanj.github.io/Home_Furnishing_Page/" class="link" target="_blank">QA106-ZEYNEP</a>
+                <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Home-Furnishing-Page/" class="link"
+                    target="_blank">Q8161-SEDA</a>
+                <a href="https://zeyneparslanj.github.io/Home_Furnishing_Page/" class="link"
+                    target="_blank">QA106-ZEYNEP</a>
             </div>
     </div>
     </main>
@@ -68,18 +73,21 @@
     <div class="footer">
         <div>
             <audio id="radio" loop autoplay>
-                <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3" type="audio/mpeg">
+                <source
+                    src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3"
+                    type="audio/mpeg">
             </audio>
             <button onclick="toggleRadio()">Play▶️</button>
             <button onclick="pauseRadio()">Mute⏸️</button>
-            <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)" style="width: 80px; position: relative; top: 5px; ">
+            <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)"
+                style="width: 80px; position: relative; top: 5px; ">
         </div>
         <p>Code Fighters. All rights reserved. © 2024</p>
     </div>
-    
+
     <script>
         var radio = document.getElementById("radio");
-    
+
         function toggleRadio() {
             if (radio.paused) {
                 radio.play();
@@ -88,20 +96,20 @@
             }
             radio.volume = 0.03;
         }
-    
+
         function pauseRadio() {
             radio.pause();
         }
-    
+
         function setVolume(volume) {
             radio.volume = parseFloat(volume);
         }
-    
-        radio.addEventListener('playing', function() {
+
+        radio.addEventListener('playing', function () {
             radio.volume = 0.03;
         });
     </script>
-    
+
 </body>
 
 </html>

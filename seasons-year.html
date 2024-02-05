@@ -33,9 +33,10 @@
                         <a href="paths.html">Clarusway Paths</a>
                         <a href="netflix.html">Netflix</a>
                         <a href="media.html">Media Quare</a>
-
-<a href="personal.html">Mix</a>
-<a href="test.html">Test</a>                      </div>
+                        <a href="personal.html">Mix</a>
+                        <a href="apple.html">Apple</a>
+                        <a href="test.html">Test</a>
+                    </div>
                 </div>
                 <div class="exercises">
                     <button class="exercises-menu">Exercises</button>
@@ -54,25 +55,30 @@
             <h1 class="title">Leap Year & Get Seasons</h1>
             <div class="linkler">
                 <a href="https://omer-faruk-oncu.github.io/season/" class="link" target="_blank">QB143-FARUK</a>
-                <a href="https://omerfaruk2626.github.io/CW-Area/js/Tasks/seasons/" class="link" target="_blank">QB135-OMER</a>
+                <a href="https://omerfaruk2626.github.io/CW-Area/js/Tasks/seasons/" class="link"
+                    target="_blank">QB135-OMER</a>
             </div>
-      </div>  </main>
-    
-      <div class="footer">
+    </div>
+    </main>
+
+    <div class="footer">
         <div>
             <audio id="radio" loop autoplay>
-                <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3" type="audio/mpeg">
+                <source
+                    src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3"
+                    type="audio/mpeg">
             </audio>
             <button onclick="toggleRadio()">Play▶️</button>
             <button onclick="pauseRadio()">Mute⏸️</button>
-            <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)" style="width: 80px; position: relative; top: 5px; ">
+            <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)"
+                style="width: 80px; position: relative; top: 5px; ">
         </div>
         <p>Code Fighters. All rights reserved. © 2024</p>
     </div>
-    
+
     <script>
         var radio = document.getElementById("radio");
-    
+
         function toggleRadio() {
             if (radio.paused) {
                 radio.play();
@@ -81,20 +87,20 @@
             }
             radio.volume = 0.03;
         }
-    
+
         function pauseRadio() {
             radio.pause();
         }
-    
+
         function setVolume(volume) {
             radio.volume = parseFloat(volume);
         }
-    
-        radio.addEventListener('playing', function() {
+
+        radio.addEventListener('playing', function () {
             radio.volume = 0.03;
         });
     </script>
-    
+
 </body>
 
 </html>
