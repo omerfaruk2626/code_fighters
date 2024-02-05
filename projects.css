@@ -293,3 +293,27 @@ nav button:hover {
         padding: 10px 0;
     }
 }
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+    /* height: 100%; */
+  }
+
+  .again{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* height: 40%; */
+  }
+  .result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* height: 40%; */
+  }
