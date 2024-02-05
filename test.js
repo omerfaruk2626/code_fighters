@@ -1,6 +1,6 @@
 
 let result = "";
-confirm('Basit bir kişilik testi yaptım. Katılmak ister misiniz?')
+confirm('Basit bir kişilik testi yaptım. Her test 10$. Katılmak ister misiniz?')
 let a = +prompt('Kendinizi 2 kelime ile tanımlamanızı istesem nasıl tanımlarsınız? 1= içedönük / 2= dışadönük');
 
 
