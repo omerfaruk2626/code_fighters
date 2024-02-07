@@ -42,8 +42,7 @@ header {
     rgba(255, 0, 0, 0.769) 0%,
     rgba(0, 0, 0, 0.623) 100%,
     rgb(255, 0, 0) 100%
-  );
-  text-align: center;
+  )
 }
 
 nav {
@@ -75,12 +74,7 @@ nav {
 }
 nav a{
   text-decoration: none;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 1.5rem;
   color: white;
-  text-align: center;
-  border-radius: 45px;
   padding: 11px 18px;
 }
 
@@ -98,7 +92,7 @@ nav button{
   padding: 11px 18px;
 }
 
-nav a:hover,
+
 nav button:hover{
   color: #000000;
   background-color: #d3cde1a7;
@@ -182,8 +176,8 @@ nav button:hover{
   display: none;
   background-color: rgba(0, 0, 0, 0.71);
   min-width: 150px;
-  max-height: 200px; /* Set a maximum height for the dropdown */
-  overflow-y: auto;  /* Add vertical scrollbar if needed */
+  max-height: 200px;
+  overflow-y: auto; 
   position: absolute;
   top: 100%;
   width: 170px;
@@ -311,7 +305,7 @@ nav button:hover{
 
 @media (max-width: 410px) {
   .person img {
-    margin-bottom: 30px; /* Adjust the margin-bottom as needed */
+    margin-bottom: 30px;
   }
   .person div:hover p {
     bottom: 0px;
