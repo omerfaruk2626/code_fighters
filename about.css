@@ -2,101 +2,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Lobster&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap";
+@import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-html,body{
-    background: url('1820901.jpg') no-repeat center center fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    overflow-x: hidden;
+html,
+body {
+  background: url("1820901.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  overflow-x: hidden;
 }
 
-
-.head{
-    text-align: center;
-    font-family: 'Rubik Burned', system-ui;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-
+.container {
+  clear: both;
 }
-.head a{
-    text-decoration: none;
-    color: white;
+
+.head {
+  text-align: center;
+  font-family: "Rubik Burned", system-ui;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
 }
-header{
-    background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
-    text-align: center;
+
+.head a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 0.769) 0%,
+    rgba(0, 0, 0, 0.623) 100%,
+    rgb(255, 0, 0) 100%
+  )
 }
 
 nav {
-    font-family: 'Bungee Shade', sans-serif;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 70%;
-    height: 65px;
+  font-family: 'Bungee Shade', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 70%;
+  height: 65px;
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-        margin-top: 5px;
-    }
+  nav {
+      flex-direction: column;
+      height: auto;
+      margin-top: 5px;
+  }
 
-    nav a {
-        width: 100%;
-        box-sizing: border-box;
-        margin: 20px 0;
-        text-align: center;
-        padding: 10px 0;
-    }
+  nav a {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 20px 0;
+      text-align: center;
+      padding: 10px 0;
+  }
 }
 nav a{
-    text-decoration: none;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 1.5rem;
-    color: white;
-    text-align: center;
-    border-radius: 45px;
-    padding: 11px 18px;
+  text-decoration: none;
+  color: white;
+  padding: 11px 18px;
 }
 
 nav button{
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    border: none;
-    background: none;
-    cursor: pointer;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    border-radius: 35px;
-    padding: 11px 18px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 35px;
+  padding: 11px 18px;
 }
 
-nav a:hover,
+
 nav button:hover{
-    color: #000000;
-    background-color: #d3cde1a7;
+  color: #000000;
+  background-color: #d3cde1a7;
 }
-
-
 
 .projects,
 .exercises {
@@ -119,7 +123,7 @@ nav button:hover{
 .projects-child,
 .exercises-child {
     display: none;
-    background-color: rgba(0, 0, 0, 0.71);
+    background-color: rgba(0, 0, 0, 0.523);
     min-width: 150px;
     position: absolute;
     width: 50px;
@@ -174,10 +178,10 @@ nav button:hover{
 .projects-child,
 .exercises-child {
   display: none;
-  background-color: rgba(0, 0, 0, 0.523);
+  background-color: rgba(0, 0, 0, 0.71);
   min-width: 150px;
-  max-height: 200px; /* Set a maximum height for the dropdown */
-  overflow-y: auto;  /* Add vertical scrollbar if needed */
+  max-height: 200px;
+  overflow-y: auto; 
   position: absolute;
   top: 100%;
   width: 170px;
@@ -206,6 +210,7 @@ nav button:hover{
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+
 
 
 .title{
