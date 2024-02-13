@@ -40,9 +40,10 @@
                         <a href="apple.html">Apple</a>
                         <a href="grid.html">Grid</a>
                         <a href="animation.html">Animations</a>
-                        <a href="test.html">Test</a>  
+                        <a href="test.html">Test</a>
                     </div>
                 </div>
+
                 <div class="exercises">
                     <button class="exercises-menu">Exercises</button>
                     <div class="exercises-child">
@@ -54,6 +55,8 @@
                         <a href="functions.html">Functions</a>
                     </div>
                 </div>
+                <div class="links"><button><a href="Code_Fighters_Log_in/login.html"><i
+                                class="fa-solid fa-house"></i>Log In</a></button></div>
             </nav>
         </header>
         <main>
@@ -64,13 +67,11 @@
                     <p>Mr. Ertuğrul😎</p>
                 </div>
                 <div class="the-team">
-                    <a href="https://github.com/BecooOn" target="_blank"><img src="./images/giphy.gif"
-                            alt=""></a>
+                    <a href="https://github.com/BecooOn" target="_blank"><img src="./images/giphy.gif" alt=""></a>
                     <p>QA158-ADEM</p>
                 </div>
                 <div class="the-team">
-                    <a href="https://github.com/omer-faruk-oncu" target="_blank"><img
-                            src="./images/22.png" alt=""></a>
+                    <a href="https://github.com/omer-faruk-oncu" target="_blank"><img src="./images/22.png" alt=""></a>
                     <p>QB143-FARUK</p>
                 </div>
 
@@ -151,8 +152,7 @@
                     <p>QA175-CEREN</p>
                 </div>
                 <div class="the-team">
-                    <a href="#" target="_blank"><img src="./images/klipartz.com (16).png"
-                            alt=""></a>
+                    <a href="#" target="_blank"><img src="./images/klipartz.com (16).png" alt=""></a>
                     <p>Q5187-MUSTAFA</p>
                 </div>
             </div>
@@ -160,18 +160,21 @@
         <div class="footer">
             <div>
                 <audio id="radio" loop autoplay>
-                    <source src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3" type="audio/mpeg">
+                    <source
+                        src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3"
+                        type="audio/mpeg">
                 </audio>
                 <button onclick="toggleRadio()">Play▶️</button>
                 <button onclick="pauseRadio()">Mute⏸️</button>
-                <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)" style="width: 80px; position: relative; top: 5px; ">
+                <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)"
+                    style="width: 80px; position: relative; top: 5px; ">
             </div>
             <p>Code Fighters. All rights reserved. © 2024</p>
         </div>
-        
+
         <script>
             var radio = document.getElementById("radio");
-        
+
             function toggleRadio() {
                 if (radio.paused) {
                     radio.play();
@@ -180,20 +183,20 @@
                 }
                 radio.volume = 0.03;
             }
-        
+
             function pauseRadio() {
                 radio.pause();
             }
-        
+
             function setVolume(volume) {
                 radio.volume = parseFloat(volume);
             }
-        
-            radio.addEventListener('playing', function() {
+
+            radio.addEventListener('playing', function () {
                 radio.volume = 0.03;
             });
         </script>
-        
+
 </body>
 
 </html>
