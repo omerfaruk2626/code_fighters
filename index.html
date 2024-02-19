@@ -200,8 +200,6 @@
                 <!--! -------------------------CONTACT---------------------- -->
 
                 <!--! -------------------------CONTACT---------------------- -->
-
-
                 <section id="contact" style="display:none;">
                     <div class="content">
                         <h1 class="title">Contact</h1>
@@ -225,6 +223,7 @@
                                     <br>
                                     <input class="submit" type="submit" value="SEND">
                                 </form>
+                                <audio id="modalSound" src="./sound/Effect.mp3"></audio>
                                 <div id="overlay">
                                     <div id="modal">
                                         <p style="color: red; font-weight: bolder; border-bottom: 2px solid white;">Your
@@ -233,40 +232,6 @@
                                         <button onclick="closeModal()">Close</button>
                                     </div>
                                 </div>
-
-                                <script>
-                                    function showFormData(event) {
-                                        event.preventDefault(); // Prevent the form from submitting normally
-
-                                        // Get form elements
-                                        const username = document.getElementById('Username').value;
-                                        const email = document.getElementById('Email').value;
-                                        const message = document.getElementById('Your_Message').value;
-
-                                        // Create a message to display
-                                        const displayMessage = `Username: ${username}<br>Email: ${email}<br>Message: ${message}`;
-
-                                        // Display the modal
-                                        document.getElementById('modalContent').innerHTML = displayMessage;
-                                        document.getElementById('overlay').style.display = 'flex';
-                                    }
-
-                                    function closeModal() {
-                                        // Close the modal
-                                        document.getElementById('overlay').style.display = 'none';
-
-                                        // Reset the form
-                                        document.getElementById('contactForm').reset();
-
-                                        // Redirect to the homepage after a short delay (you can adjust the delay as needed)
-                                        setTimeout(function () {
-                                            window.location.href = 'index.html'; // Replace 'index.html' with the actual URL of your homepage
-                                        }, 2000); // Delay in milliseconds (2000ms = 2 seconds)
-                                    }
-                                </script>
-
-
-
                             </div>
                             <div id="result" style="display:none;">
                                 <div class="photo">
@@ -282,7 +247,6 @@
                         </div>
                     </div>
                 </section>
-
                 <!--! -------------------------GALLERY---------------------- -->
 
                 <!--! -------------------------GALLERY---------------------- -->
@@ -418,7 +382,6 @@
                 <!--! -------------------------LEAP YEAR & GET SEASONS---------------------- -->
 
                 <!--! -------------------------LEAP YEAR & GET SEASONS---------------------- -->
-
                 <section id="leap-year-and-get-seasons" style="display:none;">
                     <h1 class="title">Leap Year & Get Seasons</h1>
                     <div class="linkler">
@@ -447,7 +410,6 @@
                 <!--! -------------------------NETFLIX---------------------- -->
 
                 <!--! -------------------------NETFLIX---------------------- -->
-
                 <section id="netflix" style="display:none;">
                     <h1 class="title">Netflix</h1>
                     <div class="linkler">
@@ -461,7 +423,6 @@
                 <!--! -------------------------MEDİA QUARE---------------------- -->
 
                 <!--! -------------------------MEDİA QUARE---------------------- -->
-
                 <section id="media-quare" style="display:none;">
                     <h1 class="title">Media Quare</h1>
                     <div class="linkler">
@@ -483,7 +444,6 @@
                 <!--! -------------------------MIX---------------------- -->
 
                 <!--! -------------------------MIX---------------------- -->
-
                 <section id="mix" style="display:none;">
                     <h1 class="title">M i X</h1>
                     <div class="linkler">
@@ -545,7 +505,6 @@
                 <!--! -------------------------APPLE---------------------- -->
 
                 <!--! -------------------------APPLE---------------------- -->
-
                 <section id="apple" style="display:none;">
                     <h1 class="title">Product Card</h1>
                     <div class="linkler">
@@ -567,7 +526,6 @@
                 <!--! -------------------------GRID---------------------- -->
 
                 <!--! -------------------------GRID---------------------- -->
-
                 <section id="grid" style="display:none;">
                     <h1 class="title">Gallery</h1>
                     <div class="linkler">
@@ -595,7 +553,6 @@
                 <!--! -------------------------ANIMATIONS---------------------- -->
 
                 <!--! -------------------------ANIMATIONS---------------------- -->
-
                 <section id="animation" style="display:none;">
                     <h1 class="title">Animations</h1>
                     <div class="linkler">
@@ -636,7 +593,6 @@
                             target="_blank">QA158-ADEM></a>
                     </div>
                 </section>
-
             </div>
         </main>
         <footer>

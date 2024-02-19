@@ -39,22 +39,39 @@ function showSection(sectionId) {
 
 //! --------------------------------CONTACT-------------------------------//
 
-  function showFormData(event) {
-    event.preventDefault();
+function showFormData(event) {
+  event.preventDefault();
 
-    const username = document.getElementById('Username').value;
-    const email = document.getElementById('Email').value;
-    const message = document.getElementById('Your_Message').value;
-    const displayMessage = `Username: ${username}<br>Email: ${email}<br>Message: ${message}`;
-    document.getElementById('modalContent').innerHTML = displayMessage;
-    document.getElementById('overlay').style.display = 'flex';
+  const username = document.getElementById('Username').value;
+  const email = document.getElementById('Email').value;
+  const message = document.getElementById('Your_Message').value;
+  const displayMessage = `Username: ${username}<br>Email: ${email}<br>Message: ${message}`;
+
+  // Set modal content
+  document.getElementById('modalContent').innerHTML = displayMessage;
+
+  // Play modal sound
+  document.getElementById('modalSound').play();
+
+  // Display modal
+  document.getElementById('overlay').style.display = 'flex';
 }
 
 function closeModal() {
-    document.getElementById('overlay').style.display = 'none';
-    document.getElementById('contactForm').reset();
-    setTimeout(function () {
-        window.location.href = 'index.html';
-    }, 1000);
+  // Hide modal
+  document.getElementById('overlay').style.display = 'none';
+
+  // Reset form
+  document.getElementById('contactForm').reset();
+
+  // Stop and rewind modal sound
+  const modalSound = document.getElementById('modalSound');
+  modalSound.pause();
+  modalSound.currentTime = 0;
+
+  // Redirect after a delay
+  setTimeout(function () {
+      window.location.href = 'index.html';
+  }, 1000);
 }
 
