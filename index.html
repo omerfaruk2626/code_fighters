@@ -7,10 +7,17 @@
     <title>Code Fighters</title>
     <link rel="stylesheet" href="home.css">
     <link rel="shortcut icon" href="./images/logo_target.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="container">
+        <!--! -------------------------HEADER---------------------- -->
+
+        <!--! -------------------------HEADER---------------------- -->
+
         <div class="head">
             <a href="index.html">
                 <h1>Code <span style="color: red;">Fighters</span></h1>
@@ -19,185 +26,567 @@
         <header>
             <nav>
                 <div class="links">
-                    <button><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></button>
-                    <button><a href="about.html"><i class="fa-regular fa-address-card"></i>About</a></button>
-                    <button><a href="contact.html"><i class="fa-regular fa-envelope"></i>Contact</a></button>
+                    <button><a href="#" onclick="showSection('anasayfa')">Home</a></button>
+                    <button><a href="#" onclick="showSection('about')">About</a></button>
+                    <button><a href="#" onclick="showSection('contact')">Contact</a></button>
                 </div>
                 <div class="projects">
                     <button class="projects-menu">Projects</button>
                     <div class="projects-child">
-                        <a href="gallery.html">Gallery</a>
-                        <a href="anthony.html">Anthony Harold</a>
-                        <a href="guess.html">Guess Game</a>
-                        <a href="calc.html">Calculator</a>
-                        <a href="homef.html">Home Furniture</a>
-                        <a href="parallax.html">Parallax</a>
-                        <a href="seasons-year.html">Leap Year & Get Seasons</a>
-                        <a href="paths.html">Clarusway Paths</a>
-                        <a href="netflix.html">Netflix</a>
-                        <a href="media.html">Media Quare</a>
-                        <a href="personal.html">Mix</a>
-                        <a href="apple.html">Apple</a>
-                        <a href="grid.html">Grid</a>
-                        <a href="animation.html">Animations</a>
-                        <a href="test.html">Test</a>
+                        <a href="#" onclick="showSection('gallery')">Gallery</a>
+                        <a href="#" onclick="showSection('anthony')">Anthony Harold</a>
+                        <a href="#" onclick="showSection('guess')">Guess Game</a>
+                        <a href="#" onclick="showSection('calculator')">Calculator</a>
+                        <a href="#" onclick="showSection('home-furniture')">Home Furniture</a>
+                        <a href="#" onclick="showSection('parallax')">Parallax</a>
+                        <a href="#" onclick="showSection('leap-year-and-get-seasons')">Leap Year & Get Seasons</a>
+                        <a href="#" onclick="showSection('cw-paths')">Clarusway Paths</a>
+                        <a href="#" onclick="showSection('netflix')">Netflix</a>
+                        <a href="#" onclick="showSection('media-quare')">Media Quare</a>
+                        <a href="#" onclick="showSection('mix')">Mix</a>
+                        <a href="#" onclick="showSection('apple')">Apple</a>
+                        <a href="#" onclick="showSection('grid')">Grid</a>
+                        <a href="#" onclick="showSection('animation')">Animations</a>
                     </div>
                 </div>
 
                 <div class="exercises">
                     <button class="exercises-menu">Exercises</button>
                     <div class="exercises-child">
-                        <a href="datatypes.html">Data Type</a>
-                        <a href="stringmethods.html">String Methods</a>
-                        <a href="conditionals.html">Conditionals</a>
-                        <a href="arrays.html">Arrays</a>
-                        <a href="loops.html">Loops</a>
-                        <a href="functions.html">Functions</a>
+                        <a href="#">Data Type</a>
+                        <a href="#">String Methods</a>
+                        <a href="#">Conditionals</a>
+                        <a href="#">Arrays</a>
+                        <a href="#">Loops</a>
+                        <a href="#">Functions</a>
                     </div>
                 </div>
                 <div class="links">
-                    <button><a href="Code_Fighters_Log_in/login.html">Log In</a></button>
+                    <button><a href="./Code_Fighters_Log_in/login.html">Log In</a></button>
                 </div>
             </nav>
         </header>
-        <main>
-            <div class="person">
-                <div class="mentor">
-                    <a href="https://tr.wikipedia.org/wiki/%C3%87i%C4%9F_k%C3%B6fte#:~:text=%C3%87i%C4%9F%20k%C3%B6fte%20(Osmanl%C4%B1ca%3A%20Dilbaba%2C,Ad%C4%B1yaman%20y%C3%B6resine%20ait%20bir%20yiyecektir."
-                        target="_blank"><img src="./images/mario-super-smash-bros.gif" alt=""></a>
-                    <p>Mr. Ertuğrul😎</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/BecooOn" target="_blank"><img src="./images/giphy.gif" alt=""></a>
-                    <p>QA158-ADEM</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/omer-faruk-oncu" target="_blank"><img src="./images/22.png" alt=""></a>
-                    <p>QB143-FARUK</p>
-                </div>
+        <main class="container-fluid">
+            <div id="main-content">
+                <!--! -------------------------ANASAYFA---------------------- -->
 
-                <div class="the-team">
-                    <a href="https://github.com/ykslkrtld" target="_blank"><img src="./images/klipartz.com (28).png"
-                            alt=""></a>
-                    <p>QB114-YÜKSEL</p>
-                </div>
+                <!--! -------------------------ANASAYFA---------------------- -->
+                <section id="anasayfa">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="person">
+                                <div class="mentor">
+                                    <a href="https://tr.wikipedia.org/wiki/%C3%87i%C4%9F_k%C3%B6fte#:~:text=%C3%87i%C4%9F%20k%C3%B6fte%20(Osmanl%C4%B1ca%3A%20Dilbaba%2C,Ad%C4%B1yaman%20y%C3%B6resine%20ait%20bir%20yiyecektir."
+                                        target="_blank"><img src="./images/mario-super-smash-bros.gif" alt=""></a>
+                                    <p>Mr. Ertuğrul😎</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/BecooOn" target="_blank"><img src="./images/giphy.gif"
+                                            alt=""></a>
+                                    <p>QA158-ADEM</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/omer-faruk-oncu" target="_blank"><img
+                                            src="./images/22.png" alt=""></a>
+                                    <p>QB143-FARUK</p>
+                                </div>
 
-                <div class="the-team">
-                    <a href="https://github.com/sedadiriker" target="_blank"><img src="./images/klipartz.com (18).png"
-                            alt=""></a>
-                    <p>Q8161-SEDA</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/zeyneparslanj" target="_blank"><img src="./images/klipartz.com (13).png"
-                            alt=""></a>
-                    <p>QA106-ZEYNEP</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/aliwert" target="_blank"><img src="./images/roblox.gif"
-                            alt=""></a>
-                    <p>QA124-ALİ MERT</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/akyarv0" target="_blank"><img src="./images/klipartz.com (14).png"
-                            alt=""></a>
-                    <p>QB129-VEYSEL</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/omerfaruk2626" target="_blank"><img src="./images/klipartz.com (13).png"
-                            alt=""></a>
-                    <p>QB135-OMER</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/eneeestas" target="_blank"><img src="./images/klipartz.com (19).png"
-                            alt=""></a>
-                    <p>Q9176-ENES</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/busrakocarslan" target="_blank"><img
-                            src="./images/klipartz.com (29).png" alt=""></a>
-                    <p>Q9136-BÜŞRA</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/snorlie" target="_blank"><img src="./images/klipartz.com (16).png"
-                            alt=""></a>
-                    <p>Q5126-GÖKBERK</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/MaralTach" target="_blank"><img src="./images/klipartz.com (23).png"
-                            alt=""></a>
-                    <p>QB121-AKMARAL</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/gulsahmy" target="_blank"><img src="./images/klipartz.com (25).png"
-                            alt=""></a>
-                    <p>QB117-GULSAH</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/ssimsir" target="_blank"><img src="./images/klipartz.com (30).png"
-                            alt=""></a>
-                    <p>QB127-SADIK</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/QC101-Zafer" target="_blank"><img src="./images/klipartz.com (20).png"
-                            alt=""></a>
-                    <p>QC101-ZAFER</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/ersinn26" target="_blank"><img src="./images/klipartz.com (15).png"
-                            alt=""></a>
-                    <p>QB141-ERSİN</p>
-                </div>
-                <div class="the-team">
-                    <a href="https://github.com/MrsCoder35" target="_blank"><img src="./images/klipartz.com (26).png"
-                            alt=""></a>
-                    <p>QA175-CEREN</p>
-                </div>
-                <div class="the-team">
-                    <a href="#" target="_blank"><img src="./images/klipartz.com (16).png" alt=""></a>
-                    <p>Q5187-MUSTAFA</p>
-                </div>
-            </div>
-        </main>
-        <div class="footer">
-            <div>
-                <audio id="radio" loop>
-                    <source
-                        src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3"
-                        type="audio/mpeg">
-                </audio>
-                <button onclick="toggleRadio()">Play▶️</button>
-                <button onclick="pauseRadio()">Mute⏸️</button>
-                <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)"
-                    style="width: 80px; position: relative; top: 5px; ">
-            </div>
-            <p>Code Fighters. All rights reserved. © 2024</p>
-        </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/ykslkrtld" target="_blank"><img
+                                            src="./images/klipartz.com (28).png" alt=""></a>
+                                    <p>QB114-YÜKSEL</p>
+                                </div>
 
-        <script>
-            var radio = document.getElementById("radio");
+                                <div class="the-team">
+                                    <a href="https://github.com/sedadiriker" target="_blank"><img
+                                            src="./images/klipartz.com (18).png" alt=""></a>
+                                    <p>Q8161-SEDA</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/zeyneparslanj" target="_blank"><img
+                                            src="./images/klipartz.com (13).png" alt=""></a>
+                                    <p>QA106-ZEYNEP</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/aliwert" target="_blank"><img src="./images/roblox.gif"
+                                            alt=""></a>
+                                    <p>QA124-ALİ MERT</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/akyarv0" target="_blank"><img
+                                            src="./images/klipartz.com (14).png" alt=""></a>
+                                    <p>QB129-VEYSEL</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/omerfaruk2626" target="_blank"><img
+                                            src="./images/klipartz.com (13).png" alt=""></a>
+                                    <p>QB135-OMER</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/eneeestas" target="_blank"><img
+                                            src="./images/klipartz.com (19).png" alt=""></a>
+                                    <p>Q9176-ENES</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/busrakocarslan" target="_blank"><img
+                                            src="./images/klipartz.com (29).png" alt=""></a>
+                                    <p>Q9136-BÜŞRA</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/snorlie" target="_blank"><img
+                                            src="./images/klipartz.com (16).png" alt=""></a>
+                                    <p>Q5126-GÖKBERK</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/MaralTach" target="_blank"><img
+                                            src="./images/klipartz.com (23).png" alt=""></a>
+                                    <p>QB121-AKMARAL</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/gulsahmy" target="_blank"><img
+                                            src="./images/klipartz.com (25).png" alt=""></a>
+                                    <p>QB117-GULSAH</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/ssimsir" target="_blank"><img
+                                            src="./images/klipartz.com (30).png" alt=""></a>
+                                    <p>QB127-SADIK</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/QC101-Zafer" target="_blank"><img
+                                            src="./images/klipartz.com (20).png" alt=""></a>
+                                    <p>QC101-ZAFER</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/ersinn26" target="_blank"><img
+                                            src="./images/klipartz.com (15).png" alt=""></a>
+                                    <p>QB141-ERSİN</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="https://github.com/MrsCoder35" target="_blank"><img
+                                            src="./images/klipartz.com (26).png" alt=""></a>
+                                    <p>QA175-CEREN</p>
+                                </div>
+                                <div class="the-team">
+                                    <a href="#" target="_blank"><img src="./images/klipartz.com (16).png" alt=""></a>
+                                    <p>Q5187-MUSTAFA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--! -------------------------ABOUT---------------------- -->
 
-            function toggleRadio() {
-                if (radio.paused) {
-                    radio.play();
-                } else {
-                    radio.pause();
-                }
-                radio.volume = 0.03;
-            }
+                <!--! -------------------------ABOUT---------------------- -->
+                <section id="about" style="display:none;">
+                    <h1 class="title">About</h1>
+                    <div class="about">
 
-            function pauseRadio() {
-                radio.pause();
-            }
+                        <div class="we">
+                            <h1>Who are we?</h1>
+                            <p>The date we started running is Jan 8, 2024. The end of the road is the summit. We are
+                                fully
+                                motivated and moving forward step by step. We will be successful in this business.
+                                Together with
+                                the Clarusway team, our Mentor Ertuğrul, whom we put in a special place, has contributed
+                                a lot
+                                to us and continues to do so. 😎👏</p>
+                        </div>
+                    </div>
+                </section>
+                <!--! -------------------------CONTACT---------------------- -->
 
-            function setVolume(volume) {
-                radio.volume = parseFloat(volume);
-            }
+                <!--! -------------------------CONTACT---------------------- -->
 
-            radio.addEventListener('playing', function () {
-                radio.volume = 0.03;
-            });
-        </script>
 
+                <section id="contact">
+                    <div class="content">
+                        <h1 class="title">Contact</h1>
+                        <div class="photo">
+                            <img src="./images/mail.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="message">
+                                <p>We would love to hear from you.</p>
+                            </div>
+                            <div class="Form" id="formSection">
+                                <form id="contactForm">
+                                    <label for="Username"></label>
+                                    <input type="text" name="Username" id="Username" placeholder="Username">
+                                    <label for="Email"></label><br>
+                                    <input type="text" name="Email" id="Email" placeholder="Email">
+                                    <label for="Your_Message"></label><br>
+                                    <input type="text" name="Your_Message" id="Your_Message" placeholder="Your Message"
+                                        style="height: 100px;"><br>
+                                    <input class="submit" type="button" value="SEND" onclick="submitForm()">
+                                </form>
+                            </div>
+                            <div id="result" style="display:none;">
+                                <div class="photo">
+                                    <img src="./images/good.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <div class="message">
+                                        <p>Thank you for your message.</p>
+                                    </div>
+                                    <div id="resultDetails"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <script>
+                    function submitForm() {
+                        var formData = {
+                            username: document.getElementById('Username').value,
+                            email: document.getElementById('Email').value,
+                            message: document.getElementById('Your_Message').value
+                        };
+
+                        // Form verilerini işleme al ve sonucu göster
+                        var resultHtml = '<p id="sentMessage">Your message sent successfully.</p>' +
+                            '<p>Username: ' + formData.username + '</p>' +
+                            '<p>Email: ' + formData.email + '</p>' +
+                            '<p>Message: ' + formData.message + '</p>';
+
+                        // Sonucu göster
+                        document.getElementById('resultDetails').innerHTML = resultHtml;
+
+                        // Form bölümünü gizle, Result bölümünü göster
+                        document.getElementById('formSection').style.display = 'none';
+                        document.getElementById('result').style.display = 'block';
+                    }
+                </script>
+
+</body>
+
+</html>
+
+
+
+<!--! -------------------------GALLERY---------------------- -->
+
+<!--! -------------------------GALLERY---------------------- -->
+<section id="gallery" style="display:none;">
+    <h1 class="title">Gallery</h1>
+    <div class="linkler">
+        <a href="https://ykslkrtld.github.io/Gallery/" class="link" target="_blank">QB114-YÜKSEL</a>
+        <a href="https://omer-faruk-oncu.github.io/ass-3-gallery/" class="link" target="_blank">QB143-FARUK</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/gallery/" class="link"
+            target="_blank">QB135-OMER</a>
+        <a href="https://ssimsir.github.io/workShop/teamwork/ASS-3/" class="link" target="_blank">QB127-SADIK</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/ass3/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://becooon.github.io/HTML-CSS/Assigments/SS-3/" class="link" target="_blank">QA158-ADEM</a>
+        <a href="https://busrakocarslan.github.io/Clarus_Gallery_Web/" class="link" target="_blank">Q9136-BUSRA</a>
+        <a href="https://maraltach.github.io/Task-SS3/" class="link" target="_blank">QB121-AKMARAL</a>
+    </div>
+</section>
+<!--! -------------------------ANTHONY---------------------- -->
+
+<!--! -------------------------ANTHONY---------------------- -->
+<section id="anthony" style="display:none;">
+    <h1 class="title">Anthony Harold</h1>
+    <div class="linkler">
+        <a href="https://ykslkrtld.github.io/Anthony-Harold/" class="link" target="_blank">QB114-YÜKSEL</a>
+        <a href="https://omer-faruk-oncu.github.io/ass-2/" class="link" target="_blank">QB143-FARUK</a>
+        <a href="https://becooon.github.io/HTML-CSS/Assigments/SS-2/" class="link" target="_blank">QA158-ADEM</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/anthony/" class="link"
+            target="_blank">QB135-OMER</a>
+    </div>
+</section>
+<!--! -------------------------GUESS---------------------- -->
+
+<!--! -------------------------GUESS---------------------- -->
+<section id="guess" style="display:none;">
+    <h1 class="title">Guess Game</h1>
+    <div class="linkler">
+        <a href="https://busrakocarslan.github.io/Guess_Game/" class="link" target="_blank">Q9136-BÜŞRA</a>
+        <a href="https://mrscoder35.github.io/JavaScript-Learn/assigments/homework/guess_game/" class="link"
+            target="_blank">QA175-CEREN</a>
+        <a href="https://ssimsir.github.io/workShop/teamwork/practiceGuessGame/" class="link"
+            target="_blank">QB127-SADIK</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/js/Tasks/guess/" class="link" target="_blank">QB135-OMER</a>
+        <a href="https://aliwert.github.io/randomnumbergame/" class="link" target="_blank">QA124-ALİ
+            MERT</a>
+        <a href="https://becooon.github.io/JavaScript-Studies/Assigments/SS-1-Guess_Game/" class="link"
+            target="_blank">QA158-ADEM</a>
+        <a href="https://zeyneparslanj.github.io/guessGame/" class="link" target="_blank">QA106-ZEYNEP</a>
+    </div>
+</section>
+<!--! -------------------------CALCULATOR---------------------- -->
+
+<!--! -------------------------CALCULATOR---------------------- -->
+<section id="calculator" style="display:none;">
+    <h1 class="title">Calculator</h1>
+    <div class="linkler">
+        <a href="https://akyarv0.github.io/calculator/" class="link" target="_blank">QB129-VEYSEL</a>
+        <a href="https://becooon.github.io/HTML-CSS/Coding_Challenges/02-Calculator/" class="link"
+            target="_blank">QB158-ADEM</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/js/projects/calc/" class="link" target="_blank">QB135-OMER</a>
+        <a href="https://gulsahmy.github.io/calc/" class="link" target="_blank">QB117-GULSAH</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/calculator/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://busrakocarslan.github.io/CALCULATOR/" class="link" target="_blank">Q9136-BUSRA</a>
+        <a href="https://ssimsir.github.io/workShop/teamwork/004-ios-calculator/" class="link"
+            target="_blank">QB127-SADIK</a>
+        <a href="https://zeyneparslanj.github.io/calculator/" class="link" target="_blank">QA106-ZEYNEP</a>
+        <a href="https://aliwert.github.io/basic-ios-calculator/" class="link" target="_blank">QA124-ALİ
+            MERT</a>
+        <a href="https://zeyneparslanj.github.io/calc/" class="link" target="_blank">QA106-ZEYNEP</a>
+        <a href="https://maraltach.github.io/calc2-JS/" class="link" target="_blank">QB121-AKMARAL</a>
+        <a href="https://omer-faruk-oncu.github.io/ios-calculator/" class="link" target="_blank">QB143-FARUK</a>
+    </div>
+</section>
+<!--! -------------------------HOME-FURNİTURE---------------------- -->
+
+<!--! -------------------------HOME-FURNİTURE---------------------- -->
+<section id="home-furniture" style="display:none;">
+    <h1 class="title">Home Furniture</h1>
+    <div class="linkler">
+        <a href="https://aliwert.github.io/home-furnishing/" class="link" target="_blank">QA124-ALİ
+            MERT</a>
+        <a href="https://ykslkrtld.github.io/Furniture/" class="link" target="_blank">QB114-YÜKSEL</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/home_furnishing/" class="link"
+            target="_blank">QB135-OMER</a>
+        <a href="https://becooon.github.io/HTML-CSS/Projects/003-Home-Furnishing-Page/" class="link"
+            target="_blank">QA158-ADEM</a>
+        <a href="https://maraltach.github.io/forniture-website/" class="link" target="_blank">QB121-AKMARAL</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Home-Furnishing-Page/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://zeyneparslanj.github.io/Home_Furnishing_Page/" class="link" target="_blank">QA106-ZEYNEP</a>
+    </div>
+</section>
+<!--! -------------------------PARALLAX---------------------- -->
+
+<!--! -------------------------PARALLAX---------------------- -->
+<section id="parallax" style="display:none;">
+    <h1 class="title">Parallax</h1>
+    <div class="linkler">
+        <a href="https://ykslkrtld.github.io/Parallax/" class="link" target="_blank">QB114-YÜKSEL</a>
+        <a href="https://akyarv0.github.io/solution/" class="link" target="_blank">QB129-VEYSEL</a>
+        <a href="https://zeyneparslanj.github.io/parallax/" class="link" target="_blank">QA106-ZEYNEP</a>
+        <a href="https://ssimsir.github.io/workShop/teamwork/002-parallax-website/" class="link"
+            target="_blank">QB127-SADIK</a>
+        <a href="https://omer-faruk-oncu.github.io/parallax/" class="link" target="_blank">QB143-FARUK</a>
+        <a href="https://maraltach.github.io/workshop-parallax/" class="link" target="_blank">QB121-AKMARAL</a>
+        <a href="https://becooon.github.io/HTML-CSS/Projects/002-Parallax_Page/" class="link"
+            target="_blank">QA158-ADEM</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/PARALLAX-C%CC%A7ALIS%CC%A7MASI-2/"
+            class="link" target="_blank">Q8161-SEDA</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/JS/Tasks/parallax/" class="link" target="_blank">QB135-OMER</a>
+    </div>
+</section>
+<!--! -------------------------LEAP YEAR & GET SEASONS---------------------- -->
+
+<!--! -------------------------LEAP YEAR & GET SEASONS---------------------- -->
+
+<section id="leap-year-and-get-seasons" style="display:none;">
+    <h1 class="title">Leap Year & Get Seasons</h1>
+    <div class="linkler">
+        <a href="https://omer-faruk-oncu.github.io/season/" class="link" target="_blank">QB143-FARUK</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/js/Tasks/seasons/" class="link" target="_blank">QB135-OMER</a>
+    </div>
+</section>
+<!--! -------------------------CW-PATHS---------------------- -->
+
+<!--! -------------------------CW-PATHS---------------------- -->
+
+<section id="cw-paths" style="display:none;">
+    <h1 class="title">Clarusway Paths</h1>
+    <div class="linkler">
+        <a href="https://gulsahmy.github.io/cwpaths/" class="link" target="_blank">QB117-GÜLŞAH</a>
+        <a href="https://aliwert.github.io/path.promotion/" class="link" target="_blank">QA124-ALİ
+            MERT</a>
+        <a href="https://becooon.github.io/HTML-CSS/Assigments/SS-1/" class="link" target="_blank">QA158-ADEM</a>
+        <a href="https://zeyneparslanj.github.io/ass1/" class="link" target="_blank">QA106-ZEYNEP</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/Clarusway_info_page/" class="link"
+            target="_blank">QB135-OMER</a>
+    </div>
+</section>
+<!--! -------------------------NETFLIX---------------------- -->
+
+<!--! -------------------------NETFLIX---------------------- -->
+
+<section id="netflix" style="display:none;">
+    <h1 class="title">Netflix</h1>
+    <div class="linkler">
+        <a href="https://becooon.github.io/HTML-CSS/Projects/001-Survey_form/" class="link"
+            target="_blank">QA158-ADEM</a>
+        <a href="https://zeyneparslanj.github.io/netflix/" class="link" target="_blank">QA106-ZEYNEP</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/Netflix/" class="link"
+            target="_blank">QB135-OMER</a>
+    </div>
+</section>
+<!--! -------------------------MEDİA QUARE---------------------- -->
+
+<!--! -------------------------MEDİA QUARE---------------------- -->
+
+<section id="media-quare" style="display:none;">
+    <h1 class="title">Media Quare</h1>
+    <div class="linkler">
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/media_quare/" class="link"
+            target="_blank">QB135-OMER</a>
+        <a href="https://maraltach.github.io/projectmedQ/" class="link" target="_blank">QB121-AKMARAL</a>
+        <a href="https://ykslkrtld.github.io/Media_Query/" class="link" target="_blank">QB114-YÜKSEL</a>
+        <a href="https://becooon.github.io/HTML-CSS/Coding_Challenges/03-Media-Query/" class="link"
+            target="_blank">QA158-ADEM</a>
+        <a href="https://omer-faruk-oncu.github.io/ass-4-product-card/" class="link" target="_blank">QB143-FARUK</a>
+        <a href="https://busrakocarslan.github.io/PHOTO_WEB_S/" class="link" target="_blank">Q9136-BUSRA</a>
+
+
+    </div>
+</section>
+<!--! -------------------------MIX---------------------- -->
+
+<!--! -------------------------MIX---------------------- -->
+
+<section id="mix" style="display:none;">
+    <h1 class="title">M i X</h1>
+    <div class="linkler">
+        <a href="https://sedadiriker.github.io/finished-work/gaziantep/" class="link" target="_blank">Q8161-SEDA
+            GAZİANTEP</a>
+        <a href="https://sedadiriker.github.io/work-in-progress/GOOGLE/" class="link" target="_blank">Q8161-SEDA
+            GOOGLE</a>
+        <a href="https://becooon.github.io/Homeworks/Practice/" class="link" target="_blank">QA158-ADEM
+            PRACTİCE</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/position-practice/" class="link"
+            target="_blank">Q8161-SEDA POSITION</a>
+        <a href="https://sedadiriker.github.io/finished-work/kis%CC%A7isel%20portfo%CC%88y/" class="link"
+            target="_blank">Q8161-SEDA PORTFOLIO</a>
+        <a href="https://sedadiriker.github.io/finished-work/pastac%C4%B1/ " class="link" target="_blank">Q8161-SEDA
+            PASTE</a>
+        <a href="https://zeyneparslanj.github.io/ass2_PersonalPortfolio/" class="link" target="_blank">QA106-ZEYNEP
+            PORTFOLIO</a>
+        <a href="https://zeyneparslanj.github.io/WorldChildCrueltyGallery/" class="link" target="_blank">QA106-ZEYNEP
+            WORLD</a>
+        <a href="https://aliwert.github.io/city-introduction/" class="link" target="_blank">QA124-ALI
+            MERT
+            CITY</a>
+        <a href="https://zeyneparslanj.github.io/dice_game/" class="link" target="_blank">QA106-ZEYNEP
+            DICE</a>
+        <a href="https://zeyneparslanj.github.io/pokedex_basic/" class="link" target="_blank">QA106-ZEYNEP
+            POKE</a>
+        <a href="https://sedadiriker.github.io/finished-work/instagram-login-page/" class="link"
+            target="_blank">Q8161-SEDA İNSTAGRAM</a>
+        <a href="https://maraltach.github.io/hexagon-clippath/" class="link" target="_blank">QB121-AKMARAL
+            HEXAGON</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/klavye-gr%C4%B1d/" class="link"
+            target="_blank">Q8161-SEDA KLAVYE</a>
+        <a href="https://busrakocarslan.github.io/Tatil_burada_web_s/" class="link" target="_blank">Q9136-BUSRA
+            TATIL</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/trt-clone/" class="link"
+            target="_blank">Q8161-SEDA CLONE</a>
+        <a href="https://omerfaruk2626.github.io/friends/index.html" class="link" target="_blank">QB135-OMER
+            FRIENDS</a>
+        <a href="https://becooon.github.io/HTML-CSS/Free-studies/01-chess/" class="link" target="_blank">QA158-ADEM
+            CHESS</a>
+        <a href="https://zeyneparslanj.github.io/flower_web/" class="link" target="_blank">QA106-ZEYNEP
+            CİCEK</a>
+        <a href="https://gulsahmy.github.io/Elisaa/" class="link" target="_blank">QB117-GULSAH
+            ELISSA</a>
+        <a href="https://akyarv0.github.io/login-page-m-nir-bey/" class="link" target="_blank">QB129-VEYSEL LOGIN></a>
+    </div>
+</section>
+<!--! -------------------------APPLE---------------------- -->
+
+<!--! -------------------------APPLE---------------------- -->
+
+<section id="apple" style="display:none;">
+    <h1 class="title">Product Card</h1>
+    <div class="linkler">
+        <a href="https://omer-faruk-oncu.github.io/ass-4-product-card/" class="link" target="_blank">QB143-FARUK</a>
+        <a href="https://maraltach.github.io/ASS4-task/" class="link" target="_blank">QB121-AKMARAL</a>
+        <a href="https://akyarv0.github.io/product-card/" class="link" target="_blank">QB129-VEYSEL</a>
+        <a href="https://becooon.github.io/HTML-CSS/Assigments/SS-4/" class="link" target="_blank">QA158-ADEM</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Assignments/ass4/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/productcard/" class="link"
+            target="_blank">QB135-OMER</a>
+        <a href="https://gulsahmy.github.io/proje-ass4/" class="link" target="_blank">QB117-GULSAH</a>
+        <a href="https://ykslkrtld.github.io/Product_Card/" class="link" target="_blank">QB114-YÜKSEL</a>
+    </div>
+</section>
+<!--! -------------------------GRID---------------------- -->
+
+<!--! -------------------------GRID---------------------- -->
+
+<section id="grid" style="display:none;">
+    <h1 class="title">Gallery</h1>
+    <div class="linkler">
+        <a href="https://gulsahmy.github.io/grid1/" class="link" target="_blank">QB117-GULSAH</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/doga-gr%C4%B1d/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/grid/" class="link"
+            target="_blank">QB135-OMER</a>
+        <a href="https://becooon.github.io/HTML-CSS/Coding_Challenges/04-Grid/" class="link"
+            target="_blank">QA158-ADEM</a>
+        <a href="https://ykslkrtld.github.io/Sport_News/" class="link" target="_blank">QB114-YÜKSEL</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/fash%C4%B1on-gr%C4%B1d/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://becooon.github.io/HTML-CSS/Assigments/SS-5/" class="link" target="_blank">QA158-ADEM</a>
+        <a href="https://ssimsir.github.io/workShop/teamwork/ASS-5/" class="link" target="_blank">QB127-SADIK</a>
+        <a href="https://gulsahmy.github.io/ass-6/" class="link" target="_blank">QB117-GULSAH</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Animations/cloud-sun/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://omer-faruk-oncu.github.io/ass-5-grid/" class="link" target="_blank">QB135-OMER></a>
+    </div>
+</section>
+<!--! -------------------------ANIMATIONS---------------------- -->
+
+<!--! -------------------------ANIMATIONS---------------------- -->
+
+<section id="animation" style="display:none;">
+    <h1 class="title">Animations</h1>
+    <div class="linkler">
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Animations/cloud-sun/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://ssimsir.github.io/workShop/teamwork/ASS-5/" class="link" target="_blank">QB127-SADIK</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Animations/hareketli-bloklar/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://gulsahmy.github.io/ass-6/" class="link" target="_blank">Q8161-GULSAH</a>
+        <a href="https://omerfaruk2626.github.io/CW-Area/html_css/Tasks/animation/" class="link"
+            target="_blank">QB135-OMER</a>
+        <a href="https://ykslkrtld.github.io/Clarusway_Paths_Animation/" class="link" target="_blank">QB114-YÜKSEL</a>
+        <a href="https://aliwert.github.io/HTML-CSS/Assignments/nike.testing/" class="link" target="_blank">QA124-ALI
+            MERT</a>
+        <a href="https://ykslkrtld.github.io/Tennis_Ball_Animation/" class="link" target="_blank">QB114-YÜKSEL</a>
+        <a href="https://busrakocarslan.github.io/Kindergarden_css_w/" class="link" target="_blank">Q9136-BUSRA</a>
+        <a href="https://becooon.github.io/HTML-CSS/Assigments/SS-5/" class="link" target="_blank">QA158-ADEM</a>
+        <a href="https://busrakocarslan.github.io/Yazi_Tura_Css/" class="link" target="_blank">Q9136-BUSRA</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Animations/duman-efekti/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Animations/tubel%C4%B1ght/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://omer-faruk-oncu.github.io/valentine-day/" class="link" target="_blank">QB143-FARUK</a>
+        <a href="https://sedadiriker.github.io/Clarusway-BootCamp-/HTML-CSS/Animations/golge/" class="link"
+            target="_blank">Q8161-SEDA</a>
+        <a href="https://omer-faruk-oncu.github.io/cc-04-animation/" class="link" target="_blank">QB143-FARUK</a>
+        <a href="https://maraltach.github.io/ass6new/" class="link" target="_blank">QA124-MARAL</a>
+        <a href="https://becooon.github.io/HTML-CSS/Assigments/SS-6/" class="link" target="_blank">QA158-ADEM></a>
+    </div>
+</section>
+
+</div>
+</main>
+<div class="footer">
+    <div>
+        <audio id="radio" loop>
+            <source
+                src="https://playerservices.streamtheworld.com/api/livestream-redirect/METRO_FM128AAC.aac?/;stream.mp3"
+                type="audio/mpeg">
+        </audio>
+        <button onclick="toggleRadio()">Play▶️</button>
+        <button onclick="pauseRadio()">Mute⏸️</button>
+        <input type="range" min="0" max="1" step="0.01" value="0.03" onchange="setVolume(this.value)"
+            style="width: 80px; position: relative; top: 5px; ">
+    </div>
+    <p>Code Fighters. All rights reserved. © 2024</p>
+</div>
+</div>
+
+<script src="script.js"></script>
 </body>
 
 </html>

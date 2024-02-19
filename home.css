@@ -1,4 +1,7 @@
-@import "https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap";
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap");
 
 * {
@@ -9,7 +12,7 @@
 
 html,
 body {
-  background: url("1820901.jpg") no-repeat center center fixed;
+  background: url("./images/1820901.jpg") no-repeat center center fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -21,6 +24,11 @@ body {
 .container {
   clear: both;
 }
+
+
+/* ------------------------------------------ */
+/*! ---------------- NAV -------------------- */
+/* ------------------------------------------ */
 
 .head {
   text-align: center;
@@ -209,7 +217,7 @@ nav button:hover{
 
 
 /* ------------------------------------------ */
-/*! ---------------- MAİN -------------------- */
+/*! ---------------- MAİN ------------------- */
 /* ------------------------------------------ */
 
 .person {
@@ -312,6 +320,202 @@ nav button:hover{
   }
 
 }
+
+
+
+/* ------------------------------------------ */
+/*! ---------------- ORTAK ------------------ */
+/* ------------------------------------------ */
+
+.title{
+  text-align: center;
+  color: white;
+  font-family: 'Gamja Flower', sans-serif;
+  background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+}
+
+
+/* ------------------------------------------ */
+/*! ----------------- ABOUT ----------------- */
+/* ------------------------------------------ */
+.we p{
+  font-family: 'Gamja Flower', sans-serif;
+font-family: 'Lobster', sans-serif;
+}
+
+
+.about {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+}
+
+.we {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 800;
+  text-align: center; /* Center text for responsiveness */
+  margin: 5rem 2rem; /* Adjust margin for better spacing */
+  font-family: 'Lobster', sans-serif;
+}
+
+.we h1 {
+  color: red;
+}
+
+
+@media (max-width: 410px) {
+  .we p{
+      font-size: 1.2rem;
+  }
+  .we h1{
+      font-size: 2rem;
+  }
+  .we{
+      margin: 0px;
+      /* padding: 20px; */
+  }
+  
+}
+
+/* ------------------------------------------ */
+/*! ---------------- CONTACT  --------------- */
+/* ------------------------------------------ */
+
+.photo{
+  margin-top: 10px;
+  width: 100%;
+  /* height: 100px; */
+  display: flex;
+  justify-content: center;
+}
+.photo img{
+  width: 110px;
+  height: 80px;
+
+}
+
+
+.message{
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid rgb(255, 255, 255); */
+  height: 40px;
+}
+form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ff00006b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Style the form labels */
+label {
+  display: block;
+  /* margin-bottom: 2px; */
+  color: #333;
+}
+
+/* Style the form inputs and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333;
+}
+
+/* Style the placeholder text color */
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+/* Style the submit button */
+.submit {
+  background-color: #3f0303;
+  color: #fff;
+  padding: 10px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  box-shadow: 5px 5px 6px rgb(255, 255, 255);
+}
+.submit:hover{
+  background-color: #fffefe;
+  color: red;
+  box-shadow: 5px 5px 6px rgb(0, 0, 0);
+}
+
+/* ------------------------------------------ */
+/*! ---------------- PROJECTS --------------- */
+/* ------------------------------------------ */
+
+
+.linkler {
+  text-align: center;
+  color: white;
+  font-family: 'Gamja Flower', sans-serif;
+  width: 80%;
+  padding: 5px;
+  margin: 10%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: sans-serif;
+  text-decoration: none;
+  width: 155px;
+  height: 125px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #d7747485;
+  text-align: center;
+  border-radius: 40px;
+  margin: 10px;
+  border: 3px solid rgba(38, 27, 27, 0.559);
+}
+.linkler a{
+  /* position: relative; */
+}
+
+.linkler a:hover {
+  color: #ffffff;
+  background-color: #5965603d;
+  cursor: pointer;
+  border: 2px solid white;
+  backdrop-filter: blur(5px);
+
+}
+
+
 /* ------------------------------------------ */
 /*! ---------------- FOOTER ----------------- */
 /* ------------------------------------------ */
@@ -340,4 +544,22 @@ nav button:hover{
 .footer button:hover {
   background-color: #bd225d9d;
   color: rgb(255, 255, 255);
+}
+
+#login p{
+  color: white;
+}
+
+#resultDetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+#sentMessage{
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  border-bottom: 2px solid rgb(255, 0, 0);
 }
