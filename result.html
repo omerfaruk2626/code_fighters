@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=he, initial-scale=1.0">
-    <title>Code Fighters</title>
+    <title>Result</title>
     <link rel="shortcut icon" href="./images/logo_target.png" type="image/x-icon">
     <link rel="stylesheet" href="result.css">
 </head>
@@ -68,14 +68,19 @@
             </div>
             <div class="content">
                 <div class="message">
-                    <p>Thank you for your message.</p>
+                    <p>Thank you.</p>
+
+                </div>
+                <div class="result-text">
+                    <p style="color: rgb(255, 0, 0); text-align: center; font-weight: bold; border-bottom: 2px solid;">Your
+                        message has been sent successfully.</p>
                 </div>
                 <div id="result"></div>
                 <script>
                     document.addEventListener('DOMContentLoaded', function () {
                         const resultList = document.getElementById('result');
                         new URLSearchParams(window.location.search).forEach((value, name) => {
-                            resultList.innerHTML += `${name}: ${value}<br>`;
+                            resultList.innerHTML += ` ${name}: ${value}<br>`;
                         });
                     });
                 </script>
