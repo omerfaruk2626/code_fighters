@@ -18,10 +18,12 @@
 
         <!--! -------------------------HEADER---------------------- -->
 
-        <div class="head"><span>
-            <a href="index.html" id="logo">
-                <h1>Code <span style="color: red;">Fighters</span></h1>
-            </a></span>
+        <div class="head"><video src="./images/star.mp4" autoplay muted loop id="stars"></video>
+            <div class="codefihgters">
+                <a href="index.html" id="logo">
+                    <h1>Code <span style="color: red;">Fighters</span></h1>
+                </a>
+            </div>
         </div>
         <header>
             <nav>
@@ -66,6 +68,7 @@
                 </div>
             </nav>
         </header>
+
         <main class="container-fluid">
             <div id="main-content">
                 <!--! -------------------------ANASAYFA---------------------- -->
@@ -210,16 +213,60 @@
                                 <p>We would love to hear from you.</p>
                             </div>
                             <div class="Form" id="formSection">
-                                <form id="contactForm" method="get" action="result.html" target="_blank">
-                                    <label for="Username"></label>
-                                    <input type="text" name="Username" id="Username" placeholder="Username">
-                                    <label for="Email"></label><br>
-                                    <input type="text" name="Email" id="Email" placeholder="Email">
-                                    <label for="Your_Message"></label><br>
-                                    <input type="text" name="Your_Message" id="Your_Message" placeholder="Your Message" style="height: 100px;"><br>
+                                <form id="contactForm" onsubmit="showFormData(event)" method="get">
+                                    <br>
+                                    <input type="text" name="Username" id="Username" placeholder="Enter your username">
+                                    <br><br><br>
+                                    <input type="text" name="Email" id="Email" placeholder="Enter your email">
+                                    <br>
+                                    <br><br>
+                                    <textarea name="Your_Message" id="Your_Message" placeholder="Type your message here"
+                                        rows="4"></textarea>
+                                    <br>
                                     <input class="submit" type="submit" value="SEND">
                                 </form>
-                                
+                                <div id="overlay">
+                                    <div id="modal">
+                                        <p style="color: red; font-weight: bolder; border-bottom: 2px solid white;">Your
+                                            message has been sent successfully.</p><br>
+                                        <div id="modalContent"></div>
+                                        <button onclick="closeModal()">Close</button>
+                                    </div>
+                                </div>
+
+                                <script>
+                                    function showFormData(event) {
+                                        event.preventDefault(); // Prevent the form from submitting normally
+
+                                        // Get form elements
+                                        const username = document.getElementById('Username').value;
+                                        const email = document.getElementById('Email').value;
+                                        const message = document.getElementById('Your_Message').value;
+
+                                        // Create a message to display
+                                        const displayMessage = `Username: ${username}<br>Email: ${email}<br>Message: ${message}`;
+
+                                        // Display the modal
+                                        document.getElementById('modalContent').innerHTML = displayMessage;
+                                        document.getElementById('overlay').style.display = 'flex';
+                                    }
+
+                                    function closeModal() {
+                                        // Close the modal
+                                        document.getElementById('overlay').style.display = 'none';
+
+                                        // Reset the form
+                                        document.getElementById('contactForm').reset();
+
+                                        // Redirect to the homepage after a short delay (you can adjust the delay as needed)
+                                        setTimeout(function () {
+                                            window.location.href = 'index.html'; // Replace 'index.html' with the actual URL of your homepage
+                                        }, 2000); // Delay in milliseconds (2000ms = 2 seconds)
+                                    }
+                                </script>
+
+
+
                             </div>
                             <div id="result" style="display:none;">
                                 <div class="photo">
@@ -235,7 +282,7 @@
                         </div>
                     </div>
                 </section>
-                
+
                 <!--! -------------------------GALLERY---------------------- -->
 
                 <!--! -------------------------GALLERY---------------------- -->
