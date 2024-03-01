@@ -93,130 +93,6 @@ nav {
 }
 
 
-nav a{
-  text-decoration: none;
-  color: white;
-  padding: 11px 18px;
-}
-
-nav button{
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  border: none;
-  background: none;
-  cursor: pointer;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border-radius: 35px;
-  padding: 11px 18px;
-}
-
-
-nav button:hover{
-  color: #000000;
-  background-color: #d3cde1a7;
-}
-
-.projects,
-.exercises {
-    position: relative;
-    display: inline-block;
-    font-family: 'Bungee Shade', sans-serif;
-    font-size: 12px;
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.projects button,
-.exercises button {
-    font-family: 'Bungee Shade', sans-serif;
-    font-size: 24px;
-}
-
-.projects-child,
-.exercises-child {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.523);
-    min-width: 150px;
-    position: absolute;
-    width: 50px;
-    text-align: center;
-    padding: 10px;
-    margin: 5px;
-
-}
-
-.projects-child a,
-.exercises-child a {
-    color: rgb(255, 255, 255);
-    padding: 5px;
-    margin: 1px;
-    text-decoration: none;
-    display: block;
-    font-size: 17px;
-    text-align: left;
-    font-family: 'Black Ops One', system-ui;
-    /* width: 138px; */
-    z-index: 2;
-}
-
-.projects:hover .projects-child,
-.exercises:hover .exercises-child {
-    display: block;
-    color: rgb(255, 255, 255);
-    border-radius: 15px;
-    width: 115px;
-    z-index: 2;
-
-}
-.projects-child a:active .projects-child{
-  display: none;
-}
-
-
-.projects-menu,
-.exercises-menu {
-    position: relative;
-    display: inline-block;
-    font-family: 'Bungee Shade', sans-serif;
-    font-size: 214px;
-    cursor: pointer;
-}
-
-
-.projects-menu:hover .projects-child,
-.exercises-menu:hover .exercises-child {
-    display: block;
-    color: rgb(255, 0, 0);
-    border-radius: 15px;
-}
-
-
-.projects-child,
-.exercises-child {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.71);
-  min-width: 150px;
-  max-height: 200px;
-  overflow-y: auto; 
-  position: absolute;
-  top: 100%;
-  width: 170px;
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-  cursor: pointer;
-}
-
-.projects-child a:hover,
-.exercises-child a:hover {
-  background-color: rgba(255, 0, 0, 0.719);
-  border-radius: 15px;
-}
 
 ::-webkit-scrollbar {
   width: 20px;
@@ -258,7 +134,7 @@ nav button:hover{
 
 }
 .dropdown-menu {
-  background-color: #b3000057;
+  background-color: #16161657;
   color: white;
   height: 250px;
   overflow-y: auto;
@@ -277,6 +153,7 @@ nav button:hover{
   margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 35px;
+  width: 350px;
 }
 
 
