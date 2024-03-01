@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
   searchButton.addEventListener("click", function () {
       searchResultsContainer.style.display = "block";
       anasayfa.style.display = "none";
+      event.preventDefault();
 
       var searchQuery = searchInput.value.toLowerCase();
       var filteredLinks = [];
