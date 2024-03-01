@@ -108,6 +108,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       displaySearchResults(filteredLinks);
+  input.value = "";
+
   });
 
   function displaySearchResults(results) {
