@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
           searchLinkler.innerText = "No matching results found.";
       }
   }
+  input.value = "";
 });
 
 

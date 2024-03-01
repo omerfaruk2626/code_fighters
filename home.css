@@ -47,7 +47,7 @@ body {
 }
 
 .head a {
-  /* text-decoration: none; */
+  text-decoration: none;
   color: white;
 }
 
@@ -157,9 +157,15 @@ nav {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .dropdown-menu {
-    background-color: red !important;
+    background-color: rgba(11, 11, 11, 0.546) !important;
+  }
+  .nav-item {
+    background-color: #3f030369;
+  }
+  a:hover {
+    color: white;
   }
   
 }
@@ -269,7 +275,7 @@ nav {
 }
 
 #searchArea {
-  height: 100vh;
+  height: 100%
 }
 
 /* ------------------------------------------ */
