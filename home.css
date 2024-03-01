@@ -240,6 +240,52 @@ nav button:hover{
 }
 
 
+
+.navbar {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 0, 0.769) 0%,
+    rgba(0, 0, 0, 0.623) 100%,
+    rgb(255, 0, 0) 100%
+  );
+  a {
+    color: white !important;
+    font-weight: 900;
+  }
+
+}
+.dropdown-menu {
+  background-color: #b3000057;
+  color: white;
+  height: 250px;
+  overflow-y: auto;
+}
+.dropdown-menu a:hover {
+  background-color: #b30000;
+}
+
+
+.search {
+  outline: none;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 35px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .dropdown-menu {
+    background-color: red !important;
+  }
+  
+}
 /* ------------------------------------------ */
 /*! ---------------- MAİN ------------------- */
 /* ------------------------------------------ */
@@ -357,6 +403,8 @@ nav button:hover{
   color: white;
   font-family: 'Gamja Flower', sans-serif;
   background: linear-gradient(0deg, rgba(255, 0, 0, 0.769) 0%, rgba(0, 0, 0, 0.623) 100%, rgb(255, 0, 0) 100%  );
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 
