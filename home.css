@@ -268,7 +268,9 @@ nav {
 
 }
 
-
+#searchArea {
+  height: 100vh;
+}
 
 /* ------------------------------------------ */
 /*! ---------------- ORTAK ------------------ */
@@ -462,7 +464,7 @@ textarea::placeholder {
 /* ------------------------------------------ */
 
 
-.linkler {
+.linkler, .linklerSearch {
   text-align: center;
   color: white;
   font-family: 'Gamja Flower', sans-serif;
@@ -500,7 +502,7 @@ textarea::placeholder {
   /* position: relative; */
 }
 
-.linkler a:hover {
+.linkler a:hover, .linklerSearch a:hover {
   color: #ffffff;
   background-color: #5965603d;
   cursor: pointer;

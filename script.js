@@ -1,11 +1,11 @@
 //! -------------------------------SECTIONS-----------------------------//
 
 function showSection(sectionId) {
-    var sections = document.querySelectorAll('#main-content section');
+    const sections = document.querySelectorAll('#main-content section');
     sections.forEach(function (section) {
       section.style.display = 'none';
     });
-    var selectedSection = document.getElementById(sectionId);
+    const selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
       selectedSection.style.display = 'block';
     }
@@ -14,7 +14,7 @@ function showSection(sectionId) {
 
 //! --------------------------------RADİO-------------------------------//
 
-  var radio = document.getElementById("radio");
+  const radio = document.getElementById("radio");
 
   function toggleRadio() {
       if (radio.paused) {
@@ -72,4 +72,54 @@ function closeModal() {
       window.location.href = 'index.html';
   }, 1000);
 }
+
+//! --------------------------------SEARCH-------------------------------//
+
+document.addEventListener("DOMContentLoaded", function () {
+  var linkContainers = document.querySelectorAll(".linkler");
+  var searchInput = document.getElementById("input");
+  var searchButton = document.getElementById("search");
+  var searchResultsContainer = document.getElementById("searchArea");
+  var anasayfa = document.getElementById("anasayfa");
+  var searchLinkler = document.getElementById("searchLinkler");
+
+  searchButton.addEventListener("click", function () {
+      searchResultsContainer.style.display = "block";
+      anasayfa.style.display = "none";
+
+      var searchQuery = searchInput.value.toLowerCase();
+      var filteredLinks = [];
+
+      linkContainers.forEach(function (container) {
+          var containerFilteredLinks = Array.from(container.getElementsByClassName("link"))
+              .filter(function (link) {
+                  return link.innerText.toLowerCase().includes(searchQuery);
+              })
+              .map(function (link) {
+                  // Create a new element that includes the section ID
+                  var newLink = link.cloneNode(true);
+                  var sectionId = container.parentElement.id; // Assuming each section is a direct child of the parent
+                  newLink.innerHTML += " (" + sectionId + ")";
+                  return newLink;
+              });
+
+          filteredLinks = filteredLinks.concat(containerFilteredLinks);
+      });
+
+      displaySearchResults(filteredLinks);
+  });
+
+  function displaySearchResults(results) {
+      searchLinkler.innerHTML = "";
+
+      if (results.length > 0) {
+          results.forEach(function (link) {
+              searchLinkler.appendChild(link);
+          });
+      } else {
+          searchLinkler.innerText = "No matching results found.";
+      }
+  }
+});
+
 
