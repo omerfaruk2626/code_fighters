@@ -74,56 +74,62 @@ function closeModal() {
 }
 
 //! --------------------------------SEARCH-------------------------------//
-
 document.addEventListener("DOMContentLoaded", function () {
-  var linkContainers = document.querySelectorAll(".linkler");
-  var searchInput = document.getElementById("input");
-  var searchButton = document.getElementById("search");
-  var searchResultsContainer = document.getElementById("searchArea");
-  var anasayfa = document.getElementById("anasayfa");
-  var searchLinkler = document.getElementById("searchLinkler");
+    const linkContainers = document.querySelectorAll(".linkler");
+    const searchInput = document.getElementById("input");
+    const searchButton = document.getElementById("search");
+    const searchResultsContainer = document.getElementById("searchArea");
+    const anasayfa = document.getElementById("anasayfa");
+    const about = document.getElementById("about");
+    const contact = document.getElementById("contact");
+    const projects = document.querySelector(".projects");
+    const searchLinkler = document.getElementById("searchLinkler");
 
-  searchButton.addEventListener("click", function () {
+  
+    searchButton.addEventListener("click", function (event) {
       searchResultsContainer.style.display = "block";
       anasayfa.style.display = "none";
+      about.style.display = "none";
+      contact.style.display = "none";
+      projects.style.display = "none";
       event.preventDefault();
-
-      var searchQuery = searchInput.value.toLowerCase();
-      var filteredLinks = [];
-
+  
+      const searchQuery = searchInput.value.toLowerCase();
+      let filteredLinks = []; // Change from const to let
+  
       linkContainers.forEach(function (container) {
-          var containerFilteredLinks = Array.from(container.getElementsByClassName("link"))
-              .filter(function (link) {
-                  return link.innerText.toLowerCase().includes(searchQuery);
-              })
-              .map(function (link) {
-                  // Create a new element that includes the section ID
-                  var newLink = link.cloneNode(true);
-                  var sectionId = container.parentElement.id; // Assuming each section is a direct child of the parent
-                  newLink.innerHTML += " (" + sectionId + ")";
-                  return newLink;
-              });
-
-          filteredLinks = filteredLinks.concat(containerFilteredLinks);
-      });
-
-      displaySearchResults(filteredLinks);
-  input.value = "";
-
-  });
-
-  function displaySearchResults(results) {
-      searchLinkler.innerHTML = "";
-
-      if (results.length > 0) {
-          results.forEach(function (link) {
-              searchLinkler.appendChild(link);
+        const containerFilteredLinks = Array.from(container.getElementsByClassName("link"))
+          .filter(function (link) {
+            return link.innerText.toLowerCase().includes(searchQuery);
+          })
+          .map(function (link) {
+            // Create a new element that includes the section ID
+            const newLink = link.cloneNode(true);
+            const sectionId = container.parentElement.id; // Assuming each section is a direct child of the parent
+            newLink.innerHTML += " (" + sectionId + ")";
+            return newLink;
           });
+  
+        filteredLinks = filteredLinks.concat(containerFilteredLinks);
+      });
+  
+      displaySearchResults(filteredLinks);
+      searchInput.value = ""; // Reset the input value
+  
+    });
+  
+    function displaySearchResults(results) {
+      searchLinkler.innerHTML = "";
+  
+      if (results.length > 0) {
+        results.forEach(function (link) {
+          searchLinkler.appendChild(link);
+        });
       } else {
-          searchLinkler.innerText = "No matching results found.";
+        searchLinkler.innerText = "No matching results found.";
       }
-  }
-  input.value = "";
-});
-
-
+    }
+  
+    searchInput.value = ""; // If you still want to reset the input value outside the event listener
+  });
+  
