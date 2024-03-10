@@ -7,8 +7,7 @@ https://omerfaruk2626.github.io/code_fighters/
 ## Table of Contents
 
 - [About](#)
-- [About](#)
-<a href="https://github.com/BecooOn" target="_blank">QA158-ADEM</a>
+- [About](<a href="https://github.com/BecooOn" target="_blank">QA158-ADEM</a>
 
 <a href="https://github.com/omer-faruk-oncu" target="_blank">QB143-FARUK</a>
 
@@ -43,6 +42,7 @@ https://omerfaruk2626.github.io/code_fighters/
 <a href="https://github.com/MrsCoder35" target="_blank">QA175-CEREN</a>
 
 <a href="#" target="_blank">Q5187-MUSTAFA</a>
+)
 
 
 - [Contact](#)
