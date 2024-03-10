@@ -16,18 +16,6 @@ https://omerfaruk2626.github.io/code_fighters/
 
 This website serves as a digital portfolio for our group, providing a central hub for our collaborative projects and tasks. It's a testament to our teamwork, creativity, and technical skills.
 
-## Tasks
-
-### Task 1: [Task Title 1](task1_link)
-Description and details about Task 1 go here.
-
-### Task 2: [Task Title 2](task2_link)
-Description and details about Task 2 go here.
-
-### Task 3: [Task Title 3](task3_link)
-Description and details about Task 3 go here.
-
-... (add more tasks as needed)
 
 ## Projects
 <ul>
@@ -52,10 +40,9 @@ Description and details about Task 3 go here.
                                     <li><a href="#" class="dropdown-item" onclick="showSection('score-keeper')">Score Keeper</a></li>
                                     <li><a href="#" class="dropdown-item" onclick="showSection('validator')">Validator</a></li>
                                     <li><a href="#" class="dropdown-item" onclick="showSection('vowels')">Vowels</a></li>
-                                    <a href="#" class="dropdown-item" onclick="showSection('wallet')">Wallet</a>
-                                    <a href="#" class="dropdown-item" onclick="showSection('sass-projects')">SASS Projects</a>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('wallet')">Wallet</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('sass-projects')">SASS Projects</a></li>
                             
-                            <li>
 
 ## Contributing
 
