@@ -1,15 +1,16 @@
-# Group Portfolio Website
+# CODE FİGHTERS PAGE
 
-Welcome to our group portfolio website! This project showcases the collaborative efforts of our group, highlighting various tasks and projects we've worked on together. Below, you'll find links to specific tasks and their corresponding details.
+Welcome to our group website! This project showcases the collaborative efforts of our group, highlighting various tasks and projects we've worked on together. Below, you'll find links to specific tasks and their corresponding details.
+
+https://omerfaruk2626.github.io/code_fighters/
 
 ## Table of Contents
 
-- [About](#about)
-- [Tasks](#tasks)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [About](#)
+- [Contact](#)
+- [Projects](#)
+- [Contributing](#[contributing](https://github.com/omerfaruk2626/code_fighters/graphs/contributors))
+
 
 ## About
 
@@ -28,20 +29,33 @@ Description and details about Task 3 go here.
 
 ... (add more tasks as needed)
 
-## Installation
-
-To set up this project locally, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/your-username/group-portfolio.git`
-2. Navigate to the project folder: `cd group-portfolio`
-3. Install dependencies: `npm install` or `yarn install`
-
-## Usage
-
-1. Run the application: `npm start` or `yarn start`
-2. Open your browser and go to `http://localhost:3000`
-
-Feel free to explore the website and click on task links to view detailed information.
+## Projects
+<ul>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('gallery')">Gallery</a>
+                                    </li><a href="#" class="dropdown-item" onclick="showSection('anthony')">Anthony Harold</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('guess')">Guess Game</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('calculator')">Calculator</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('home-furniture')">Home Furniture</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('parallax')">Parallax</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('leap-year-and-get-seasons')">Get Seasons</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('cw-paths')">Clarusway Paths</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('netflix')">Netflix</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('media-quare')">Media Quare</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('apple')">Apple</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('grid')">Grid</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('animation')">Animations</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('boostrap')">Boostrap</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('dom-1')">Dom-1</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('random-color')">Random color</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('guess-2')">Guess-2</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('todolist')">To Do List</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('score-keeper')">Score Keeper</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('validator')">Validator</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="showSection('vowels')">Vowels</a></li>
+                                    <a href="#" class="dropdown-item" onclick="showSection('wallet')">Wallet</a>
+                                    <a href="#" class="dropdown-item" onclick="showSection('sass-projects')">SASS Projects</a>
+                            
+                            <li>
 
 ## Contributing
 
