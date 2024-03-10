@@ -7,24 +7,43 @@ https://omerfaruk2626.github.io/code_fighters/
 ## Table of Contents
 
 - [About](#)
-<a href="https://github.com/BecooOn" target="_blank"><img src="./images/gif/adem.gif" alt=""></a>
-<a href="https://github.com/omer-faruk-oncu" target="_blank"><img src="./images/gif/faruk.gif" alt=""></a>
-<a href="https://github.com/ykslkrtld" target="_blank"><img src="./images/gif/yüksel.gif" alt=""></a>
-<a href="https://github.com/sedadiriker" target="_blank"><img src="./images/gif/seda.gif" alt=""></a>
-<a href="https://github.com/zeyneparslanj" target="_blank"><img src="./images/gif/akmaral.gif" alt=""></a>
-<a href="https://github.com/aliwert" target="_blank"><img src="./images/gif/ali.gif" alt=""></a>
-<a href="https://github.com/akyarv0" target="_blank"><img src="./images/gif/veysel.gif" alt=""></a>
-<a href="https://github.com/omerfaruk2626" target="_blank"><img src="./images/gif/ömer.gif" alt=""></a>
-<a href="https://github.com/eneeestas" target="_blank"><img src="./images/gif/enes.gif" alt=""></a>
-<a href="https://github.com/busrakocarslan" target="_blank"><img src="./images/gif/büşra.gif" alt=""></a>
-<a href="https://github.com/snorlie" target="_blank"><img src="./images/gif/gökberk.gif" alt=""></a>
-<a href="https://github.com/MaralTach" target="_blank"><img src="./images/gif/zeynep.gif" alt=""></a>
-<a href="https://github.com/gulsahmy" target="_blank"><img src="./images/gif/gülşah.gif" alt=""></a>
-<a href="https://github.com/ssimsir" target="_blank"><img src="./images/gif/sadık.gif" alt=""></a>
-<a href="https://github.com/QC101-Zafer" target="_blank"><img src="./images/gif/zafer.gif" alt=""></a>
-<a href="https://github.com/ersinn26" target="_blank"><img src="./images/gif/ersin.gif" alt=""></a>
-<a href="https://github.com/MrsCoder35" target="_blank"><img src="./images/gif/ceren.gif" alt=""></a>
-<a href="#" target="_blank"><img src="./images/gif/mustafa.gif" alt=""></a>
+- [About](#)
+<a href="https://github.com/BecooOn" target="_blank">QA158-ADEM</a>
+
+<a href="https://github.com/omer-faruk-oncu" target="_blank">QB143-FARUK</a>
+
+<a href="https://github.com/ykslkrtld" target="_blank">QB114-YÜKSEL</a>
+
+<a href="https://github.com/sedadiriker" target="_blank">Q8161-SEDA</a>
+
+<a href="https://github.com/zeyneparslanj" target="_blank">QA106-ZEYNEP</a>
+
+<a href="https://github.com/aliwert" target="_blank">QA124-ALİ MERT</a>
+
+<a href="https://github.com/akyarv0" target="_blank">QB129-VEYSEL</a>
+
+<a href="https://github.com/omerfaruk2626" target="_blank">QB135-OMER</a>
+
+<a href="https://github.com/eneeestas" target="_blank">Q9176-ENES</a>
+
+<a href="https://github.com/busrakocarslan" target="_blank">Q9136-BÜŞRA</a>
+
+<a href="https://github.com/snorlie" target="_blank">Q5126-GÖKBERK</a>
+
+<a href="https://github.com/MaralTach" target="_blank">QB121-AKMARAL</a>
+
+<a href="https://github.com/gulsahmy" target="_blank">QB117-GULSAH</a>
+
+<a href="https://github.com/ssimsir" target="_blank">QB127-SADIK</a>
+
+<a href="https://github.com/QC101-Zafer" target="_blank">QC101-ZAFER</a>
+
+<a href="https://github.com/ersinn26" target="_blank">QB141-ERSİN</a>
+
+<a href="https://github.com/MrsCoder35" target="_blank">QA175-CEREN</a>
+
+<a href="#" target="_blank">Q5187-MUSTAFA</a>
+
 
 - [Contact](#)
 - [Projects](#)
