@@ -6,24 +6,7 @@ Visit our website: [Code Fighters](https://omerfaruk2626.github.io/code_fighters
 
 ## Group Members
 
-- [QA158-ADEM](https://github.com/BecooOn)
-- [QB143-FARUK](https://github.com/omer-faruk-oncu)
-- [QB114-YÜKSEL](https://github.com/ykslkrtld)
-- [Q8161-SEDA](https://github.com/sedadiriker)
-- [QA106-ZEYNEP](https://github.com/zeyneparslanj)
-- [QA124-ALİ MERT](https://github.com/aliwert)
-- [QB129-VEYSEL](https://github.com/akyarv0)
-- [QB135-OMER](https://github.com/omerfaruk2626)
-- [Q9176-ENES](https://github.com/eneeestas)
-- [Q9136-BÜŞRA](https://github.com/busrakocarslan)
-- [Q5126-GÖKBERK](https://github.com/snorlie)
-- [QB121-AKMARAL](https://github.com/MaralTach)
-- [QB117-GULSAH](https://github.com/gulsahmy)
-- [QB127-SADIK](https://github.com/ssimsir)
-- [QC101-ZAFER](https://github.com/QC101-Zafer)
-- [QB141-ERSİN](https://github.com/ersinn26)
-- [QA175-CEREN](https://github.com/MrsCoder35)
-- [Q5187-MUSTAFA](#) (Link not provided)
+- [QA158-ADEM](https://github.com/BecooOn) - [QB143-FARUK](https://github.com/omer-faruk-oncu) - [QB114-YÜKSEL](https://github.com/ykslkrtld) - [Q8161-SEDA](https://github.com/sedadiriker) - [QA106-ZEYNEP](https://github.com/zeyneparslanj) - [QA124-ALİ MERT](https://github.com/aliwert) - [QB129-VEYSEL](https://github.com/akyarv0) - [QB135-OMER](https://github.com/omerfaruk2626) - [Q9176-ENES](https://github.com/eneeestas) - [Q9136-BÜŞRA](https://github.com/busrakocarslan) - [Q5126-GÖKBERK](https://github.com/snorlie) - [QB121-AKMARAL](https://github.com/MaralTach) - [QB117-GULSAH](https://github.com/gulsahmy) - [QB127-SADIK](https://github.com/ssimsir) - [QC101-ZAFER](https://github.com/QC101-Zafer) - [QB141-ERSİN](https://github.com/ersinn26) - [QA175-CEREN](https://github.com/MrsCoder35) - [Q5187-MUSTAFA](#) (Link not provided)
 
 ## Table of Contents
 
