@@ -10,11 +10,13 @@ Visit our website: [Code Fighters](https://omerfaruk2626.github.io/code_fighters
 
 ## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [About](#about)
 - [Contact](#contact)
 - [Projects](#projects)
 - [Contributing](#contributing)
-- [Login](#[license](https://omerfaruk2626.github.io/code_fighters/Code_Fighters_Log_in/login.html))
+- [Login](https://omerfaruk2626.github.io/code_fighters/Code_Fighters_Log_in/login.html)
+
 
 ## About
 
