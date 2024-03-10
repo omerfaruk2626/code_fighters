@@ -7,9 +7,29 @@ https://omerfaruk2626.github.io/code_fighters/
 ## Table of Contents
 
 - [About](#)
+<a href="https://github.com/BecooOn" target="_blank"><img src="./images/gif/adem.gif" alt=""></a>
+<a href="https://github.com/omer-faruk-oncu" target="_blank"><img src="./images/gif/faruk.gif" alt=""></a>
+<a href="https://github.com/ykslkrtld" target="_blank"><img src="./images/gif/yüksel.gif" alt=""></a>
+<a href="https://github.com/sedadiriker" target="_blank"><img src="./images/gif/seda.gif" alt=""></a>
+<a href="https://github.com/zeyneparslanj" target="_blank"><img src="./images/gif/akmaral.gif" alt=""></a>
+<a href="https://github.com/aliwert" target="_blank"><img src="./images/gif/ali.gif" alt=""></a>
+<a href="https://github.com/akyarv0" target="_blank"><img src="./images/gif/veysel.gif" alt=""></a>
+<a href="https://github.com/omerfaruk2626" target="_blank"><img src="./images/gif/ömer.gif" alt=""></a>
+<a href="https://github.com/eneeestas" target="_blank"><img src="./images/gif/enes.gif" alt=""></a>
+<a href="https://github.com/busrakocarslan" target="_blank"><img src="./images/gif/büşra.gif" alt=""></a>
+<a href="https://github.com/snorlie" target="_blank"><img src="./images/gif/gökberk.gif" alt=""></a>
+<a href="https://github.com/MaralTach" target="_blank"><img src="./images/gif/zeynep.gif" alt=""></a>
+<a href="https://github.com/gulsahmy" target="_blank"><img src="./images/gif/gülşah.gif" alt=""></a>
+<a href="https://github.com/ssimsir" target="_blank"><img src="./images/gif/sadık.gif" alt=""></a>
+<a href="https://github.com/QC101-Zafer" target="_blank"><img src="./images/gif/zafer.gif" alt=""></a>
+<a href="https://github.com/ersinn26" target="_blank"><img src="./images/gif/ersin.gif" alt=""></a>
+<a href="https://github.com/MrsCoder35" target="_blank"><img src="./images/gif/ceren.gif" alt=""></a>
+<a href="#" target="_blank"><img src="./images/gif/mustafa.gif" alt=""></a>
+
 - [Contact](#)
 - [Projects](#)
-- [Contributing](#[contributing](https://github.com/omerfaruk2626/code_fighters/graphs/contributors))
+- <a href="https://github.com/omerfaruk2626/code_fighters/graphs/contributors">Contributing</a>
+- <a href="./Code_Fighters_Log_in/login.html">Login</a>
 
 
 ## About
