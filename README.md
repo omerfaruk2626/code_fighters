@@ -23,7 +23,6 @@ We are a dynamic team of individuals with expertise in software development, des
 ## Projects
 
 
-| -------------------- | 
 | Gallery              | 
 | Anthony Harold       | 
 | Guess Game           | 
