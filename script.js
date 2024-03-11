@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const anasayfa = document.getElementById("anasayfa");
     const about = document.getElementById("about");
     const contact = document.getElementById("contact");
-    const projects = document.querySelector(".projects");
+    const projects = document.querySelectorAll(".projects");
     const searchLinkler = document.getElementById("searchLinkler");
 
   
@@ -91,11 +91,14 @@ document.addEventListener("DOMContentLoaded", function () {
       anasayfa.style.display = "none";
       about.style.display = "none";
       contact.style.display = "none";
-      projects.style.display = "none";
+      // projects.style.display = "none";
+      projects.forEach(function (project) {
+        project.style.display = "none";
+      })
       event.preventDefault();
   
       const searchQuery = searchInput.value.toLowerCase();
-      let filteredLinks = []; // Change from const to let
+      let filteredLinks = [];
   
       linkContainers.forEach(function (container) {
         const containerFilteredLinks = Array.from(container.getElementsByClassName("link"))
@@ -103,9 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
             return link.innerText.toLowerCase().includes(searchQuery);
           })
           .map(function (link) {
-            // Create a new element that includes the section ID
+
             const newLink = link.cloneNode(true);
-            const sectionId = container.parentElement.id; // Assuming each section is a direct child of the parent
+            const sectionId = container.parentElement.id;
             newLink.innerHTML += " (" + sectionId + ")";
             return newLink;
           });
@@ -114,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   
       displaySearchResults(filteredLinks);
-      searchInput.value = ""; // Reset the input value
+      searchInput.value = "";
   
     });
   
@@ -130,6 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   
-    searchInput.value = ""; // If you still want to reset the input value outside the event listener
+    searchInput.value = "";
   });
   
