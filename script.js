@@ -74,6 +74,8 @@ function closeModal() {
 }
 
 //! --------------------------------SEARCH-------------------------------//
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const linkContainers = document.querySelectorAll(".linkler");
     const searchInput = document.getElementById("input");
