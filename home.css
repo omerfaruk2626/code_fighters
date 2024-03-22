@@ -146,7 +146,7 @@ nav {
 #searchForm {
   height: 50px;
   background-color: rgba(15, 2, 2, 0.164);
-  width: 350px !important;
+  width: 300px !important;
   display: flex;
   justify-content: flex-end;
 }
@@ -157,7 +157,7 @@ nav {
   font-size: 1.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  /* width: 150px; */
+  width: 150px;
   height: 100%;
   padding: 3px 0px;
   border-radius: 10px;
@@ -168,7 +168,7 @@ nav {
 #input{
   padding: 3px 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.546);
-  width: 250px;
+  width: 200px;
   /* height: 50px; */
 }
 
@@ -594,7 +594,7 @@ textarea::placeholder {
   }
   .border-link {
     /* border: 2px solid red; */
-    background-color: #212529;
+    background-color: #077ef4;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
