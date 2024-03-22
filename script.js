@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const newLink = link.cloneNode(true);
             const sectionId = container.parentElement.id;
-            newLink.innerHTML += " (" + sectionId + ")";
+            newLink.innerHTML += " <br>(" + sectionId + ")";
             return newLink;
           });
   
