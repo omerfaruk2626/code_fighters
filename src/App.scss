@@ -1,6 +1,11 @@
-@use './components/About/About.scss';
-@use './components/Contact/Contact.scss';
-@use './components/Footer/Footer.scss';
-@use './components/Header/Header.scss';
-@use './components/Sections/Sections.scss';
-
+@import './components/About/About.scss';
+@import './components/Contact/Contact.scss';
+@import './components/Footer/Footer.scss';
+@import './components/Header/Header.scss';
+@import './components/Sections/Sections.scss';
+@import './components/Search/Search.scss';
+@import './scss/_reset.scss';
+@import './scss/_titles.scss';
+@import './scss/mixins.scss';
+@import './scss/variables.scss';
+@import './components/Home/Home.scss'
