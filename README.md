@@ -1,4 +1,4 @@
-# hello Code Fighters: Shaping the Future of Technology Together!
+# hello! Code Fighters: Shaping the Future of Technology Together!
 
 Hello! We are Code Fighters, a group of technology enthusiasts who have come together to make a difference. As a team of individuals specializing in various fields, we've collaborated on diverse projects and discovered the power of working together. Beyond just coding, we learn and grow by interacting with each other.
 
