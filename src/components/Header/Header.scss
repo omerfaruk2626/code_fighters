@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&family=Truculenta:opsz,wght@12..72,100..900&display=swap')
+;
+
+.navbar{
+    font-family: "permanent marker", sans-serif;
+    letter-spacing: 2px;
+}
+.nav-link:hover{
+    color: white !important;
+}
+
+.dropdown-menu {
+    font-family: "permanent marker", sans-serif;
+    // font-family: "Anton", sans-serif;
+    background-color: #16161657;
+    color: white;
+    height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    a:hover {
+        background-color: bisque;
+    }
+}
+.dropdown-item{
+    display: flex;
+    justify-content: space-between;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(128, 128, 128, 0.441);
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgba(64, 38, 96, 0.854);
+    border-radius: 11px;
+}
+
+
