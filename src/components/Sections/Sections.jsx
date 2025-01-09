@@ -101,7 +101,12 @@ const Sections = () => {
         <ul className="linkler">
           {selectedProjectLinks.map((link) => (
             <li key={link.url}>
-              <a className="link" href={link.url} target="_blank">
+              <a
+                className="link"
+                href={link.url}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 {link.name}
               </a>
             </li>
