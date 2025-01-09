@@ -1,8 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState, useEffect } from 'react';
-import projectsData from '../../helper/projects.json';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS dosyasını ekleyin
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,12 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const Header = () => {
-    const [projects, setProjects] = useState([]);
-
-    useEffect(() => {
-        // Projeleri JSON dosyasından al
-        setProjects(projectsData.projects);
-    }, []);
 
     return (
         <nav className="navbar bg-secondary navbar-expand-lg ">
@@ -28,32 +20,21 @@ const Header = () => {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item ">
-                            <a href="/" className="nav-link active fw-bold fs-5">Home</a>
+                        <li className="nav-item">
+                            <Link to="/" className="nav-link active fw-bold fs-5">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="about" className="nav-link active fw-bold fs-5">About</a>
+                            <Link to="/about" className="nav-link active fw-bold fs-5">About</Link>
                         </li>
                         <li className="nav-item">
-                            <a href="contact" className="nav-link active fw-bold fs-5">Contact</a>
+                            <Link to="/contact" className="nav-link active fw-bold fs-5">Contact</Link>
                         </li>
-                        <li className="nav-item dropdown">
-                            <a className="nav-link active fw-bold fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Projects
-                            </a>
-                            <ul className="dropdown-menu">
-                                {projects.map(project => (
-                                            <tr className="align-middle" key={project.section_id}>
-                                                <td className="align-middle text-start"><a href="Sections" className="dropdown-item">{project.title}</a></td>
-                                                <td className="align-middle text-end pe-0"><button className="btn btn-sm btn-light">+</button></td>
-                                            </tr>
-                                ))}
-                            </ul>
+                        <li className="nav-item">
+                            <Link to="/Sections" className="nav-link active fw-bold fs-5">Projects</Link>
                         </li>
-                        <li className="nav-item"><a href="#" className="nav-link">+Add</a></li>
                     </ul>
                 </div>
+
                 <div className="navbar-form">
                     <form className="d-flex search" role="search" id="searchForm">
                         <input className="form-control me-2" id="input" type="search" placeholder="Name"

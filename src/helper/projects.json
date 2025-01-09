@@ -133,7 +133,7 @@
       ]
     },
     {
-      "section_id": "gallery",
+      "id": "gallery",
       "title": "Gallery",
       "links": [
         {
@@ -171,7 +171,7 @@
       ]
     },
     {
-      "section_id": "anthony",
+      "id": "anthony",
       "title": "Anthony Harold",
       "links": [
         {
@@ -193,7 +193,7 @@
       ]
     },
     {
-      "section_id": "guess",
+      "id": "guess",
       "title": "Guess Game",
       "links": [
         {
@@ -227,7 +227,7 @@
       ]
     },
     {
-      "section_id": "calculator",
+      "id": "calculator",
       "title": "Calculator",
       "links": [
         {
