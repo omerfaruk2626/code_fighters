@@ -1,50 +1,115 @@
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
-
-
-
-
-
+import { Link } from "react-router-dom";
+import { Menu } from "@headlessui/react";
 
 const Header = () => {
+  return (
+    <nav className="bg-gray-900 text-white px-4 py-3 shadow-md h-[80px] fixed top-0 left-0 w-full z-50">
+      <div className="container mx-auto flex justify-between items-center">
+        <Link to="/" className="text-2xl font-bold">
+          Code Fighters
+        </Link>
 
-    return (
-        <nav className="navbar bg-secondary navbar-expand-lg ">
-            <div className="container-fluid d-flex justify-content-space-evenly" style={{ width: '100%' }}>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+        <Menu as="div" className="relative lg:hidden z-30">
+          {({ open }) => (
+            <>
+              <Menu.Button className="text-3xl focus:outline-none">
+                {open ? "✕" : "☰"}
+              </Menu.Button>
 
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item">
-                            <Link to="/" className="nav-link active fw-bold fs-5">Home</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/about" className="nav-link active fw-bold fs-5">About</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/contact" className="nav-link active fw-bold fs-5">Contact</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/Sections" className="nav-link active fw-bold fs-5">Projects</Link>
-                        </li>
-                    </ul>
-                </div>
+              <Menu.Items className="absolute right-0 top-full mt-2 w-48 bg-gray-900 rounded-md shadow-lg border border-gray-700">
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      to="/"
+                      className={`block px-4 py-2 ${
+                        active ? "bg-gray-700" : ""
+                      }`}
+                    >
+                      Home
+                    </Link>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      to="/about"
+                      className={`block px-4 py-2 ${
+                        active ? "bg-gray-700" : ""
+                      }`}
+                    >
+                      About
+                    </Link>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      to="/contact"
+                      className={`block px-4 py-2 ${
+                        active ? "bg-gray-700" : ""
+                      }`}
+                    >
+                      Contact
+                    </Link>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      to="/sections"
+                      className={`block px-4 py-2 ${
+                        active ? "bg-gray-700" : ""
+                      }`}
+                    >
+                      Projects
+                    </Link>
+                  )}
+                </Menu.Item>
+              </Menu.Items>
+            </>
+          )}
+        </Menu>
 
-                <div className="navbar-form">
-                    <form className="d-flex search" role="search" id="searchForm">
-                        <input className="form-control me-2" id="input" type="search" placeholder="Name"
-                            aria-label="Search" />
-                        <button className="btn btn-light" type="submit" id="search">Search</button>
-                    </form>
-                </div>
-            </div>
-        </nav >
-    );
-}
+        {/* Desktop Menu */}
+        <div className="hidden lg:flex space-x-6 text-lg">
+          <Link to="/" className="hover:bg-gray-700 px-4 py-2 rounded-md">
+            Home
+          </Link>
+          <Link to="/about" className="hover:bg-gray-700 px-4 py-2 rounded-md">
+            About
+          </Link>
+          <Link
+            to="/contact"
+            className="hover:bg-gray-700 px-4 py-2 rounded-md"
+          >
+            Contact
+          </Link>
+          <Link
+            to="/sections"
+            className="hover:bg-gray-700 px-4 py-2 rounded-md"
+          >
+            Projects
+          </Link>
+        </div>
+
+        <div className="hidden lg:block">
+          <form className="flex items-center">
+            <input
+              type="text"
+              placeholder="Search"
+              className="px-3 py-2 w-40 border border-gray-600 rounded-md bg-gray-700 text-white focus:outline-none focus:ring focus:ring-gray-500"
+            />
+            <button
+              type="submit"
+              className="ml-2 px-3 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 export default Header;

@@ -12,7 +12,7 @@
 
 html,
 body {
-  background: rgb(68,199,182);
+  background: rgb(112, 158, 197);
 background: linear-gradient(0deg, rgba(68,199,182,1) 25%, rgba(59,122,135,1) 76%, rgba(2,0,36,1) 100%);
   /* background: url("./images/1820901.jpg") no-repeat center center fixed; */
   -moz-background-size: cover;
@@ -69,7 +69,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 365px;
-  z-index: 2;
+  /* z-index: 2; */
   border-radius: 15px;
 }
 
@@ -81,7 +81,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  /* z-index: 1; */
   border-radius: 15px;
   animation: bottomToTop 5s infinite linear;
 }
@@ -139,7 +139,7 @@ nav {
 .navbar {
   width: 100%;
   position: relative;
-  z-index: 3;
+  /* z-index: 3; */
   background: linear-gradient(
     0deg,
     rgba(255, 0, 0, 0.769) 0%,
@@ -566,7 +566,7 @@ textarea::placeholder {
   bottom: 0;
   left: 0;
   /* background: linear-gradient(to top, rgba(255, 255, 255, 0.425) 0%, rgba(255, 255, 255, 0.658) 100%); */
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 #team {
